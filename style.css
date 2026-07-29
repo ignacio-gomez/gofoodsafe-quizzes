@@ -1,0 +1,117 @@
+/* ============================================================
+   Custom styles - loaded after Bootstrap 5.3.8, so anything
+   here overrides it.
+
+   Only the handful of things Bootstrap has no component for.
+
+   Note: avoid reusing Bootstrap's class names (.card, .progress,
+   .progress-bar) unless you mean to extend them - a partial
+   override leaks Bootstrap's other properties through.
+   ============================================================ */
+
+/* ---------- answer choices ---------- */
+
+/* The A/B/C/D letter in front of each choice. */
+.quiz-key {
+  display: inline-block;
+  width: 1.75rem;
+  font-weight: 600;
+  color: var(--bs-secondary-color);
+}
+
+.quiz-choices .quiz-correct {
+  background-color: var(--bs-success-bg-subtle);
+  border-color: var(--bs-success-border-subtle);
+  font-weight: 600;
+}
+
+.quiz-choices .quiz-wrong {
+  background-color: var(--bs-danger-bg-subtle);
+  border-color: var(--bs-danger-border-subtle);
+}
+
+.quiz-choices .quiz-correct .quiz-key,
+.quiz-choices .quiz-wrong .quiz-key {
+  color: inherit;
+}
+
+/* ---------- compact grid of tests ----------
+   Six across on desktop, stepping down on narrow screens so the names
+   stay readable. */
+.quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .5rem;
+}
+
+@media (min-width: 576px) {
+  .quiz-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .quiz-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.quiz-grid .btn {
+  --bs-btn-padding-x: .5rem;
+  --bs-btn-padding-y: .5rem;
+  font-size: .8125rem;
+  min-width: 0;            /* lets the name truncate instead of overflowing */
+  text-align: left;
+}
+
+/* Finished tests, marked without adding anything to the label. */
+.quiz-grid .quiz-grid-done {
+  background-color: var(--bs-success-bg-subtle);
+  border-color: var(--bs-success-border-subtle);
+  color: var(--bs-success-text-emphasis);
+}
+
+/* Started but not finished - picks up where they left off. */
+.quiz-grid .quiz-grid-started {
+  background-color: var(--bs-warning-bg-subtle);
+  border-color: var(--bs-warning-border-subtle);
+  color: var(--bs-warning-text-emphasis);
+}
+
+/* ---------- question navigation ---------- */
+
+/* Equal halves whatever the labels say. Bootstrap's .flex-fill is
+   flex: 1 1 auto, which sizes to the text and makes them uneven. */
+.quiz-nav .btn {
+  flex: 1 1 0;
+}
+
+/* Both buttons share size and weight; only the colour differs. Built from
+   Bootstrap's own subtle tokens - it has no btn-*-subtle variants. */
+.quiz-nav .btn-quiz-prev {
+  background-color: var(--bs-secondary-bg-subtle);
+  border-color: var(--bs-border-color);
+  color: var(--bs-secondary-color);
+}
+
+.quiz-nav .btn-quiz-prev:hover:not(:disabled) {
+  background-color: var(--bs-secondary-border-subtle);
+  color: var(--bs-body-color);
+}
+
+.quiz-nav .btn-quiz-next {
+  background-color: var(--bs-primary-bg-subtle);
+  border-color: var(--bs-primary-border-subtle);
+  color: var(--bs-primary-text-emphasis);
+}
+
+.quiz-nav .btn-quiz-next:hover {
+  background-color: var(--bs-primary-border-subtle);
+}
+
+/* ---------- results ---------- */
+.quiz-final-score {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
