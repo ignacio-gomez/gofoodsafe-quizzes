@@ -9,6 +9,43 @@
    override leaks Bootstrap's other properties through.
    ============================================================ */
 
+/* ---------- site header ----------
+   Mirrors the main GoDaddy site: dark bar, centred, letter-spaced caps.
+   Hand-rolled rather than Bootstrap's .navbar - two links never need to
+   collapse, so the component brings nothing but markup to fight. */
+.site-nav {
+  background-color: #0f1214;
+}
+
+.site-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 1.5rem 1rem;
+  list-style: none;
+}
+
+.site-nav-list a {
+  color: rgba(255, 255, 255, .72);
+  font-size: .8125rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-nav-list a:hover,
+.site-nav-list a:focus-visible {
+  color: #fff;
+}
+
+/* Current page. On this site that is always External. */
+.site-nav-list .is-active {
+  color: #fff;
+  font-weight: 700;
+}
+
 /* ---------- answer choices ---------- */
 
 /* The A/B/C/D letter in front of each choice. */
