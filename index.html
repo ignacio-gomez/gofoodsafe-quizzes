@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice Tests &middot; GoFoodSafe</title>
+
+  <!-- Bootstrap first, your overrides second. Order matters. -->
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================================
+     HEADER  -  make this match your GoDaddy site
+     ===================================================================== -->
+  <nav class="navbar navbar-expand-md bg-white border-bottom sticky-top">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="https://www.gofoodsafe.com">
+        GoFoodSafe
+        <!-- Swap for a logo when you have one:
+      <img src="images/logo.png" alt="GoFoodSafe" height="34"> -->
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="https://www.gofoodsafe.com">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.gofoodsafe.com/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.gofoodsafe.com/contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">Quizzes</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <main class="container py-4 py-md-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 col-xl-7">
+
+
+        <!-- =====================================================================
+     SCREEN 1  -  PICK A TEST
+     ===================================================================== -->
+        <section id="screen-start" class="mb-4">
+
+          <h1 class="h3 fw-bold mb-2">Practice tests</h1>
+          <p class="text-secondary mb-4">
+            Pick a test to begin. You can leave part-way through and come back &mdash;
+            your answers are kept. Retake any test as often as you like.
+          </p>
+
+          <div class="d-flex justify-content-end mb-2">
+            <button id="btn-reset" type="button" class="btn btn-link">
+              Reset
+            </button>
+          </div>
+
+          <!-- One cell per test. Built by app.js from data/catalog.json. -->
+          <div id="quiz-grid" class="quiz-grid"></div>
+
+          <!-- Only appears if the data fails to load; JS fills in the text. -->
+          <div id="load-error" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
+
+        </section>
+
+
+        <!-- =====================================================================
+     SCREEN 2  -  THE QUIZ
+     ===================================================================== -->
+        <section id="screen-quiz" class="card border-0 shadow-sm mb-4 d-none">
+          <div class="card-body p-4 p-md-5">
+
+            <!-- Escape hatch: back to the card list from any question. -->
+            <button type="button" id="btn-quit"
+              class="btn btn-link btn-sm link-secondary text-decoration-none p-0 mb-3">
+              &larr; All tests
+            </button>
+
+            <div class="d-flex justify-content-between small text-secondary mb-2">
+              <span id="progress-text">Question 3 of 10</span>
+              <span id="score-text">Score 2</span>
+            </div>
+
+            <div class="progress mb-4" role="progressbar" aria-label="Test progress" aria-valuenow="30"
+              aria-valuemin="0" aria-valuemax="100" style="height:6px">
+              <div id="progress-fill" class="progress-bar" style="width:30%"></div>
+            </div>
+
+            <h2 id="question-text" class="h4 fw-semibold mb-4">
+              What is the first thing you should check before starting the machine?
+            </h2>
+
+            <div id="choices" class="list-group quiz-choices mb-4">
+
+              <button type="button" class="list-group-item list-group-item-action">
+                <span class="quiz-key">A</span>The fuel level
+              </button>
+
+              <!-- The correct answer gets .quiz-correct added by JS -->
+              <button type="button" class="list-group-item list-group-item-action quiz-correct">
+                <span class="quiz-key">B</span>That the guard is in place
+              </button>
+
+              <!-- What the user actually picked, if wrong, gets .quiz-wrong -->
+              <button type="button" class="list-group-item list-group-item-action quiz-wrong">
+                <span class="quiz-key">C</span>The time of day
+              </button>
+
+              <button type="button" class="list-group-item list-group-item-action">
+                <span class="quiz-key">D</span>The serial number
+              </button>
+
+            </div>
+
+            <div id="feedback" class="alert alert-light border mb-4">
+              <p id="feedback-title" class="mb-1">
+                <span class="fw-bold">C</span> is incorrect
+              </p>
+
+              <!-- Only drawn when the answer was wrong. -->
+              <hr id="feedback-rule" class="my-2">
+              <p id="feedback-explain" class="mb-0 ps-1 text-secondary">
+                The guard must be fitted and secure before any start-up. Fuel is checked afterwards.
+              </p>
+            </div>
+
+            <!-- Move freely in either direction; answering is optional. -->
+            <div class="quiz-nav d-flex gap-2">
+              <button id="btn-prev" type="button" class="btn btn-quiz-prev btn-lg fw-semibold">
+                &lsaquo; Previous
+              </button>
+              <button id="btn-next" type="button" class="btn btn-quiz-next btn-lg fw-semibold">
+                Next &rsaquo;
+              </button>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- =====================================================================
+     SCREEN 3  -  RESULTS
+     ===================================================================== -->
+        <section id="screen-result" class="card border-0 shadow-sm mb-4 text-center d-none">
+          <div class="card-body p-4 p-md-5">
+
+            <div class="d-flex justify-content-center align-items-center gap-3 mb-1">
+              <span class="text-secondary text-uppercase small fw-semibold">Test complete</span>
+              <button id="btn-retake" type="button" class="btn btn-link text-decoration-none p-0">
+                Retake test
+              </button>
+            </div>
+
+            <p id="final-score" class="quiz-final-score mb-0">7 / 10</p>
+            <p id="final-percent" class="text-secondary mb-3">70% correct</p>
+
+            <p id="final-message" class="mb-4">
+              Decent. Run it again to lock it in.
+            </p>
+
+            <div class="d-grid gap-2 col-sm-8 mx-auto">
+              <a href="https://www.gofoodsafe.com" class="btn btn-outline-secondary">Back to main site</a>
+            </div>
+
+            <hr class="my-4">
+
+            <!-- The same grid as the start screen, so they can go straight
+                 into another test without stepping back. -->
+            <p class="text-secondary text-uppercase small fw-semibold mb-2 text-start">Or pick another test</p>
+            <div id="quiz-grid-result" class="quiz-grid"></div>
+
+          </div>
+        </section>
+
+
+      </div>
+    </div>
+  </main>
+
+
+  <!-- =====================================================================
+     FOOTER
+     ===================================================================== -->
+  <footer class="border-top py-4 mt-auto">
+    <div class="container text-center text-secondary small">
+      <p class="mb-1">&copy; 2026 Your Company</p>
+      <p class="mb-0">
+        <a href="https://www.gofoodsafe.com" class="link-secondary">Main site</a>
+        <span class="mx-2">&middot;</span>
+        <a href="https://www.gofoodsafe.com/contact" class="link-secondary">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap's own JS. Needed for the mobile menu button only. -->
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
