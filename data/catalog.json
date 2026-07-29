@@ -2,6 +2,13 @@
   {
     "id": "1",
     "slug": "test",
-    "title": "Test 1"
+    "title": "Test 1",
+    "published": true
+  },
+  {
+    "id": "2",
+    "slug": "sample",
+    "title": "Sample Test",
+    "published": true
   }
 ]

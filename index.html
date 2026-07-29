@@ -33,11 +33,19 @@
      SCREEN 1  -  PICK A TEST
      ===================================================================== -->
         <section id="screen-start" class="mb-4">
+          <div class="text-center">
+            <img src="images/logo.webp"
+              alt="Registered ServSafe Proctor and Certified ServSafe Instructor"
+              width="197" height="121" class="site-logo mb-3">
+          </div>
 
-          <h1 class="h3 fw-bold mb-2">Practice tests</h1>
+          <h1 class="h3 fw-bold my-2">Get ready for the ServSafe Manager exam.</h1>
+          <p class="text-secondary mb-2">
+            Practice tests you can take as many times as you need. Free, no account,
+            no sign-up.
+          </p>
           <p class="text-secondary mb-4">
-            Pick a test to begin. You can leave part-way through and come back &mdash;
-            your answers are kept. Retake any test as often as you like.
+            Pick a test to begin.
           </p>
 
           <div class="d-flex justify-content-end mb-2">
@@ -61,21 +69,25 @@
         <section id="screen-quiz" class="card border-0 shadow-sm mb-4 d-none">
           <div class="card-body p-4 p-md-5">
 
-            <!-- Escape hatch: back to the card list from any question. -->
-            <button type="button" id="btn-quit"
-              class="btn btn-link btn-sm link-secondary text-decoration-none p-0 mb-3">
-              &larr; All tests
-            </button>
+            <!-- Escape hatch: back to the card list from any question. Given a
+                 border and a real tap target - as a bare small link it was easy
+                 to miss and awkward to hit on a phone. -->
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <button type="button" id="btn-quit" class="btn btn-secondary quiz-back">
+                &larr; All Tests
+              </button>
+              <span id="quiz-title" class="text-secondary text-uppercase small fw-semibold text-end"></span>
+            </div>
 
-            <div class="d-flex justify-content-between small text-secondary mb-2">
+            <div class="d-flex justify-content-between text-secondary mb-2 bg-info-subtle px-3 py-2 rounded mb-3">
               <span id="progress-text">Question 3 of 10</span>
               <span id="score-text">Score 2</span>
             </div>
 
-            <div class="progress mb-4" role="progressbar" aria-label="Test progress" aria-valuenow="30"
-              aria-valuemin="0" aria-valuemax="100" style="height:6px">
-              <div id="progress-fill" class="progress-bar" style="width:30%"></div>
-            </div>
+            <!-- Everything that changes height from question to question lives
+                 in here, under a min-height, so the buttons and strip below it
+                 hold still while you navigate. -->
+            <div class="quiz-body">
 
             <h2 id="question-text" class="h4 fw-semibold mb-4">
               What is the first thing you should check before starting the machine?
@@ -115,6 +127,8 @@
               </p>
             </div>
 
+            </div><!-- /.quiz-body -->
+
             <!-- Move freely in either direction; answering is optional. -->
             <div class="quiz-nav d-flex gap-2">
               <button id="btn-prev" type="button" class="btn btn-quiz-prev btn-lg fw-semibold">
@@ -124,6 +138,15 @@
                 Next &rsaquo;
               </button>
             </div>
+
+            <!-- Jump to any question. Colour shows how it was answered.
+                 Built by app.js, one cell per question. -->
+            <nav id="question-nav" class="quiz-qnav mt-4 mb-2" aria-label="Go to question"></nav>
+
+            <p class="quiz-qnav-legend small text-secondary mb-0">
+              <span><i class="quiz-qnav-swatch is-correct"></i>Correct</span>
+              <span><i class="quiz-qnav-swatch is-wrong"></i>Incorrect</span>
+            </p>
 
           </div>
         </section>
@@ -136,7 +159,7 @@
           <div class="card-body p-4 p-md-5">
 
             <div class="d-flex justify-content-center align-items-center gap-3 mb-1">
-              <span class="text-secondary text-uppercase small fw-semibold">Test complete</span>
+              <span id="final-title" class="text-secondary text-uppercase small fw-semibold">Test complete</span>
               <button id="btn-retake" type="button" class="btn btn-link text-decoration-none p-0">
                 Retake test
               </button>
@@ -149,15 +172,11 @@
               Decent. Run it again to lock it in.
             </p>
 
-            <div class="d-grid gap-2 col-sm-8 mx-auto">
-              <a href="https://gofoodsafe.com" class="btn btn-outline-secondary">Back to main site</a>
-            </div>
-
             <hr class="my-4">
 
             <!-- The same grid as the start screen, so they can go straight
                  into another test without stepping back. -->
-            <p class="text-secondary text-uppercase small fw-semibold mb-2 text-start">Or pick another test</p>
+            <p class="text-secondary text-uppercase small fw-semibold mb-2 text-start">Pick another test</p>
             <div id="quiz-grid-result" class="quiz-grid"></div>
 
           </div>

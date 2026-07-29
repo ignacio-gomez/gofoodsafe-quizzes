@@ -4,7 +4,7 @@
   "name": "Test 1",
   "questions": [
     {
-      "id": 101,
+      "id": 1,
       "q": "Which is true about self-inspections?",
       "choices": {
         "A": "They should be performed annually.",
@@ -16,7 +16,7 @@
       "explain": ""
     },
     {
-      "id": 102,
+      "id": 2,
       "q": "What should be looked for when conducting a self-inspection?",
       "choices": {
         "A": "How crisis management is handled",
@@ -28,7 +28,7 @@
       "explain": ""
     },
     {
-      "id": 103,
+      "id": 3,
       "q": "What is needed to operate a food establishment?",
       "choices": {
         "A": "A HACCP program",
@@ -40,7 +40,7 @@
       "explain": ""
     },
     {
-      "id": 104,
+      "id": 4,
       "q": "What must be done before starting any new construction or remodeling project?",
       "choices": {
         "A": "A licensed plumber must be hired.",
@@ -52,7 +52,7 @@
       "explain": ""
     },
     {
-      "id": 105,
+      "id": 5,
       "q": "Which is critical to building a strong food safety culture?",
       "choices": {
         "A": "Assigning a single point of contact to handle food safety",
@@ -64,7 +64,7 @@
       "explain": ""
     },
     {
-      "id": 106,
+      "id": 6,
       "q": "Which behavior contributes to a strong food safety culture?",
       "choices": {
         "A": "A manager distributes new thermometers to employees prior to an inspection",
@@ -76,7 +76,7 @@
       "explain": ""
     },
     {
-      "id": 107,
+      "id": 7,
       "q": "When is a HACCP plan required?",
       "choices": {
         "A": "In most cases, it is not required.",
@@ -88,7 +88,7 @@
       "explain": ""
     },
     {
-      "id": 108,
+      "id": 8,
       "q": "Which is a critical control point (CCP)?",
       "choices": {
         "A": "Cooking chicken to 165°F (74°C) for <1 second",
@@ -100,7 +100,7 @@
       "explain": ""
     },
     {
-      "id": 109,
+      "id": 9,
       "q": "A customer returns a carryout container to a restaurant to be refilled with food. It looks clean, but they will not refill it. Is the restaurant correct to refuse?",
       "choices": {
         "A": "Yes, because the container is a single-service container that is not designed to be refilled.",
@@ -112,7 +112,7 @@
       "explain": ""
     },
     {
-      "id": 110,
+      "id": 10,
       "q": "What can employees do to reduce the risk of intentional contamination?",
       "choices": {
         "A": "Secure all ingredients and supplies",
@@ -124,7 +124,7 @@
       "explain": ""
     },
     {
-      "id": 111,
+      "id": 11,
       "q": "A manager can ensure employees are following their training by",
       "choices": {
         "A": "monitoring them.",
@@ -136,7 +136,7 @@
       "explain": ""
     },
     {
-      "id": 112,
+      "id": 12,
       "q": "When should employees be trained?",
       "choices": {
         "A": "After they have committed a violation",
@@ -148,7 +148,7 @@
       "explain": ""
     },
     {
-      "id": 113,
+      "id": 13,
       "q": "When can a food handler who is vomiting return to work?",
       "choices": {
         "A": "When symptom-free for 24 hours",
@@ -160,7 +160,7 @@
       "explain": ""
     },
     {
-      "id": 114,
+      "id": 14,
       "q": "A cook is constantly sneezing while preparing food. What should the manager do?",
       "choices": {
         "A": "Exclude the person from the operation",
@@ -172,7 +172,7 @@
       "explain": ""
     },
     {
-      "id": 115,
+      "id": 15,
       "q": "How should a quick service employee with a sore throat and fever be handled?",
       "choices": {
         "A": "Exclude the person from the operation",
@@ -184,7 +184,7 @@
       "explain": ""
     },
     {
-      "id": 116,
+      "id": 16,
       "q": "A food handler is wearing a necklace, watch, earrings, and facial jewelry. Which item(s) must be removed before prepping food?",
       "choices": {
         "A": "The necklace",
@@ -196,7 +196,7 @@
       "explain": ""
     },
     {
-      "id": 117,
+      "id": 17,
       "q": "A food handler washed their hands in the three-compartment sink. They wet them with warm water, scrubbed them with soap for 10 seconds, rinsed them with warm water, and dried them with a single-use towel. What did they do wrong?",
       "choices": {
         "A": "Wet them with warm water",
@@ -208,7 +208,7 @@
       "explain": ""
     },
     {
-      "id": 118,
+      "id": 18,
       "q": "When must a food handler who is assembling boxed lunches change gloves?",
       "choices": {
         "A": "After one hour",
@@ -220,7 +220,7 @@
       "explain": ""
     },
     {
-      "id": 119,
+      "id": 19,
       "q": "A food handler has an infected wound on the palm of their hand. What must be done for them to be able to work with food?",
       "choices": {
         "A": "The wound must be covered with an impermeable cover and a single-use glove must be worn.",
@@ -232,7 +232,7 @@
       "explain": ""
     },
     {
-      "id": 120,
+      "id": 20,
       "q": "Where may you find allergens listed on a food label?",
       "choices": {
         "A": "Within the ingredient listing",
@@ -244,7 +244,7 @@
       "explain": ""
     },
     {
-      "id": 121,
+      "id": 21,
       "q": "How should an establishment handle ingredient substitutions from a vendor to prevent an allergic reaction?",
       "choices": {
         "A": "Reject any product substitutions from vendors",
@@ -256,7 +256,7 @@
       "explain": ""
     },
     {
-      "id": 122,
+      "id": 22,
       "q": "Which food item is a common allergen?",
       "choices": {
         "A": "Sesame",
@@ -268,7 +268,7 @@
       "explain": ""
     },
     {
-      "id": 123,
+      "id": 23,
       "q": "What must be provided in an establishment to prevent allergic reactions?",
       "choices": {
         "A": "An allergen-free area for preparing food",
@@ -280,7 +280,7 @@
       "explain": ""
     },
     {
-      "id": 124,
+      "id": 24,
       "q": "To prevent cross-contact,",
       "choices": {
         "A": "use only food-grade equipment.",
@@ -292,7 +292,7 @@
       "explain": ""
     },
     {
-      "id": 125,
+      "id": 25,
       "q": "What should food handlers do to prevent food allergens from being transferred to food?",
       "choices": {
         "A": "Use separate utensils and equipment for allergen special orders",
@@ -304,7 +304,7 @@
       "explain": ""
     },
     {
-      "id": 126,
+      "id": 26,
       "q": "A cook preparing a Caesar salad places hard-boiled egg slices on top before remembering the guest has an egg allergy. Since cross-contact has occurred, what do they need to do?",
       "choices": {
         "A": "Discard the salad",
@@ -316,7 +316,7 @@
       "explain": ""
     },
     {
-      "id": 127,
+      "id": 27,
       "q": "A restaurant is bottling their house salad dressing for retail sale. What must be included on the label?",
       "choices": {
         "A": "Storage recommendations for the dressing",
@@ -328,7 +328,7 @@
       "explain": ""
     },
     {
-      "id": 128,
+      "id": 28,
       "q": "What is the most important factor in choosing an approved food supplier?",
       "choices": {
         "A": "It has a HACCP program or other food safety system.",
@@ -340,7 +340,7 @@
       "explain": ""
     },
     {
-      "id": 129,
+      "id": 29,
       "q": "A food delivery truck arrives at a foodservice establishment. What is the first step that must be taken?",
       "choices": {
         "A": "The delivery must be inspected.",
@@ -352,7 +352,7 @@
       "explain": ""
     },
     {
-      "id": 130,
+      "id": 30,
       "q": "Which food should be rejected during receiving?",
       "choices": {
         "A": "Milk received at 45°F (7°C)",
@@ -364,7 +364,7 @@
       "explain": ""
     },
     {
-      "id": 131,
+      "id": 31,
       "q": "In what top-to-bottom order should raw salmon, chicken, ground beef, and a beef roast be stored in a cooler?",
       "choices": {
         "A": "1. chicken, 2. ground beef, 3. beef roast, 4. salmon",
@@ -376,7 +376,7 @@
       "explain": ""
     },
     {
-      "id": 132,
+      "id": 32,
       "q": "Food should be stored away from walls and at least _________ off the floor.",
       "choices": {
         "A": "2 inches (5 centimeters)",
@@ -388,7 +388,7 @@
       "explain": ""
     },
     {
-      "id": 133,
+      "id": 33,
       "q": "When must single-use gloves be changed?",
       "choices": {
         "A": "As soon as they become torn",
@@ -400,7 +400,7 @@
       "explain": ""
     },
     {
-      "id": 134,
+      "id": 34,
       "q": "Which food item may be handled with bare hands?",
       "choices": {
         "A": "Fresh buns for deli sandwiches",
@@ -412,7 +412,7 @@
       "explain": ""
     },
     {
-      "id": 135,
+      "id": 35,
       "q": "A cook must check the internal temperature of a chicken breast. Where should they insert the thermometer probe?",
       "choices": {
         "A": "In the thinnest part of the chicken breast",
@@ -424,7 +424,7 @@
       "explain": ""
     },
     {
-      "id": 136,
+      "id": 36,
       "q": "What is the minimum internal cooking temperature for salmon?",
       "choices": {
         "A": "135°F (57°C)",
@@ -436,7 +436,7 @@
       "explain": ""
     },
     {
-      "id": 137,
+      "id": 37,
       "q": "Chicken breasts will be partially cooked for later service. What is the maximum amount of time to cook the chicken during initial cooking?",
       "choices": {
         "A": "60 minutes",
@@ -448,7 +448,7 @@
       "explain": ""
     },
     {
-      "id": 138,
+      "id": 38,
       "q": "Where should a small stockpot of meat sauce be placed to cool?",
       "choices": {
         "A": "A cooler",
@@ -460,7 +460,7 @@
       "explain": ""
     },
     {
-      "id": 139,
+      "id": 39,
       "q": "Food must be cooled from 135°F to 70°F (57°C to 21°C) within ___ hours and then from 70°F to 41°F (21°C to 5°C) or lower in the next ___ hours.",
       "choices": {
         "A": "two, four",
@@ -472,7 +472,7 @@
       "explain": ""
     },
     {
-      "id": 140,
+      "id": 40,
       "q": "Which TCS food has been cooled correctly?",
       "choices": {
         "A": "Clam chowder cooled from 135°F to 70°F (57°C to 21°C) in four hours and then from 70°F to 41°F (21°C to 5°C) in two hours",
@@ -484,7 +484,7 @@
       "explain": ""
     },
     {
-      "id": 141,
+      "id": 41,
       "q": "Meatballs are being reheated for hot holding on a buffet. What temperature must the meatballs be reheated to?",
       "choices": {
         "A": "135°F (57°C) for 15 seconds within two hours",
@@ -496,7 +496,7 @@
       "explain": ""
     },
     {
-      "id": 142,
+      "id": 42,
       "q": "To what temperature must you reheat chili for immediate service?",
       "choices": {
         "A": "Any temperature",
@@ -508,7 +508,7 @@
       "explain": ""
     },
     {
-      "id": 143,
+      "id": 43,
       "q": "What temperature must commercially processed and packaged ready-to-eat food be reheated to?",
       "choices": {
         "A": "Any temperature",
@@ -520,7 +520,7 @@
       "explain": ""
     },
     {
-      "id": 144,
+      "id": 44,
       "q": "What should be done with ready-to-eat TCS food that will be prepped on-site and held for longer than 24 hours?",
       "choices": {
         "A": "Date-mark it.",
@@ -532,7 +532,7 @@
       "explain": ""
     },
     {
-      "id": 145,
+      "id": 45,
       "q": "When must you discard tuna salad that was prepped on July 19?",
       "choices": {
         "A": "July 21st",
@@ -544,7 +544,7 @@
       "explain": ""
     },
     {
-      "id": 146,
+      "id": 46,
       "q": "Which method is a safe way to thaw frozen shrimp?",
       "choices": {
         "A": "As part of the cooking process",
@@ -556,7 +556,7 @@
       "explain": ""
     },
     {
-      "id": 147,
+      "id": 47,
       "q": "A package of vacuum-packed frozen tuna states that the fish should remain frozen until used. When should the tuna be removed from the packaging?",
       "choices": {
         "A": "Before it's stored in the freezer",
@@ -568,7 +568,7 @@
       "explain": ""
     },
     {
-      "id": 148,
+      "id": 48,
       "q": "A manager is purchasing equipment for the operation. What mark should the manager look for to ensure the equipment is safe to use with food?",
       "choices": {
         "A": "FDA mark, USDA mark, or OSHA mark",
@@ -580,7 +580,7 @@
       "explain": ""
     },
     {
-      "id": 149,
+      "id": 49,
       "q": "What is the minimum temperature that must be maintained when holding chicken soup for service?",
       "choices": {
         "A": "135°F (57°C)",
@@ -592,7 +592,7 @@
       "explain": ""
     },
     {
-      "id": 150,
+      "id": 50,
       "q": "A food handler has been holding chicken salad for sandwiches in a cold well for four hours. When they check the salad's temperature, it is 50°F (10°C). What do they need to do?",
       "choices": {
         "A": "Sell the remaining chicken salad immediately",
@@ -604,7 +604,7 @@
       "explain": ""
     },
     {
-      "id": 151,
+      "id": 51,
       "q": "When do menu items containing TCS food need a customer advisory?",
       "choices": {
         "A": "When the items are raw or undercooked",
@@ -616,7 +616,7 @@
       "explain": ""
     },
     {
-      "id": 152,
+      "id": 52,
       "q": "Which item may be re-served to another customer?",
       "choices": {
         "A": "A partially used cup of salsa",
@@ -628,7 +628,7 @@
       "explain": ""
     },
     {
-      "id": 153,
+      "id": 53,
       "q": "What should the label for soup on a buffet include?",
       "choices": {
         "A": "Name of the food",
@@ -640,7 +640,7 @@
       "explain": ""
     },
     {
-      "id": 154,
+      "id": 54,
       "q": "Which utensil has been stored correctly?",
       "choices": {
         "A": "A pair of tongs stored flat on the top of a Caesar salad",
@@ -652,7 +652,7 @@
       "explain": ""
     },
     {
-      "id": 155,
+      "id": 55,
       "q": "Utensils that are used continuously must be cleaned and sanitized at least once every ___ hours.",
       "choices": {
         "A": "two",
@@ -664,7 +664,7 @@
       "explain": ""
     },
     {
-      "id": 156,
+      "id": 56,
       "q": "Storing raw meat separately from ready-to-eat food during transport for off-site service helps prevent",
       "choices": {
         "A": "cross-contamination.",
@@ -676,7 +676,7 @@
       "explain": ""
     },
     {
-      "id": 157,
+      "id": 57,
       "q": "A slicer is being used continuously to slice deli meat. How often must it be cleaned and sanitized?",
       "choices": {
         "A": "Every hour",
@@ -688,7 +688,7 @@
       "explain": ""
     },
     {
-      "id": 158,
+      "id": 58,
       "q": "What is the correct way to clean and sanitize a prep table?",
       "choices": {
         "A": "Remove food from surface, rinse, clean, sanitize, air-dry",
@@ -700,7 +700,7 @@
       "explain": ""
     },
     {
-      "id": 159,
+      "id": 59,
       "q": "What is the first step for cleaning and sanitizing items in a three-compartment sink?",
       "choices": {
         "A": "Air-dry items.",
@@ -712,7 +712,7 @@
       "explain": ""
     },
     {
-      "id": 160,
+      "id": 60,
       "q": "What's the difference between a disinfectant and a sanitizer?",
       "choices": {
         "A": "Sanitizers are stronger than disinfectants.",
@@ -724,7 +724,7 @@
       "explain": ""
     },
     {
-      "id": 161,
+      "id": 61,
       "q": "A manager just finished creating a master cleaning schedule. What's the next step?",
       "choices": {
         "A": "Train staff to follow the program",
@@ -736,7 +736,7 @@
       "explain": ""
     },
     {
-      "id": 162,
+      "id": 62,
       "q": "What information must a master cleaning schedule contain?",
       "choices": {
         "A": "What should be cleaned and when",
@@ -748,7 +748,7 @@
       "explain": ""
     },
     {
-      "id": 163,
+      "id": 63,
       "q": "An employee is pouring a cleaner from its original container into a spray bottle. What must the food handler write on the label of the spray bottle?",
       "choices": {
         "A": "The common name of the chemical",
@@ -760,7 +760,7 @@
       "explain": ""
     },
     {
-      "id": 164,
+      "id": 64,
       "q": "The owner of a small Italian restaurant plans on expanding the size of their kitchen. What must be submitted to the regulatory authority before starting construction?",
       "choices": {
         "A": "Proof of insurance",
@@ -772,7 +772,7 @@
       "explain": ""
     },
     {
-      "id": 165,
+      "id": 65,
       "q": "What is the purpose of a food safety management system?",
       "choices": {
         "A": "To keep all areas of the facility clean and pest-free",
@@ -784,7 +784,7 @@
       "explain": ""
     },
     {
-      "id": 166,
+      "id": 66,
       "q": "Which is an approved source for potable water?",
       "choices": {
         "A": "Untested private well",
@@ -796,7 +796,7 @@
       "explain": ""
     },
     {
-      "id": 167,
+      "id": 67,
       "q": "A food handler drops the end of a hose into a mop bucket and turns on water to fill it. What has the food handler done wrong?",
       "choices": {
         "A": "Created a cross-connection",
@@ -808,7 +808,7 @@
       "explain": ""
     },
     {
-      "id": 168,
+      "id": 68,
       "q": "At what minimum temperature must running water be supplied to a handwashing station?",
       "choices": {
         "A": "70°F (21°C)",
@@ -820,7 +820,7 @@
       "explain": ""
     },
     {
-      "id": 169,
+      "id": 69,
       "q": "Where must wastewater be disposed of?",
       "choices": {
         "A": "A storm drain",
@@ -832,7 +832,7 @@
       "explain": ""
     },
     {
-      "id": 170,
+      "id": 70,
       "q": "Which locations in an establishment typically require the brightest lighting?",
       "choices": {
         "A": "Prep areas",
@@ -844,7 +844,7 @@
       "explain": ""
     },
     {
-      "id": 171,
+      "id": 71,
       "q": "What is one way to keep an operation pest-free?",
       "choices": {
         "A": "Deny pests access to the operation.",
@@ -856,7 +856,7 @@
       "explain": ""
     },
     {
-      "id": 172,
+      "id": 72,
       "q": "Which is a good reason to carefully clean an establishment?",
       "choices": {
         "A": "It destroys insect eggs.",
@@ -868,7 +868,7 @@
       "explain": ""
     },
     {
-      "id": 173,
+      "id": 73,
       "q": "When should you repair or replace equipment in the operation?",
       "choices": {
         "A": "When it's worn",
@@ -880,7 +880,7 @@
       "explain": ""
     },
     {
-      "id": 174,
+      "id": 74,
       "q": "Outdoor garbage containers should be",
       "choices": {
         "A": "sanitized frequently.",
@@ -892,7 +892,7 @@
       "explain": ""
     },
     {
-      "id": 175,
+      "id": 75,
       "q": "A manager requires employees to store personal items in a designated area. What is the primary reason for doing this?",
       "choices": {
         "A": "To prevent theft of employee belongings",
@@ -904,7 +904,7 @@
       "explain": ""
     },
     {
-      "id": 176,
+      "id": 76,
       "q": "What should a foodservice operation do when accommodating guests with service animals?",
       "choices": {
         "A": "Allow service animals only if the guest provides veterinary records",
@@ -916,7 +916,7 @@
       "explain": ""
     },
     {
-      "id": 177,
+      "id": 77,
       "q": "Which situation is an imminent health hazard?",
       "choices": {
         "A": "A backup from a floor drain that has come in contact with food",
@@ -928,7 +928,7 @@
       "explain": ""
     },
     {
-      "id": 178,
+      "id": 78,
       "q": "Sewage backs up in a food storage area and there is a significant risk of contamination to food. What should be done?",
       "choices": {
         "A": "Execute a HACCP plan.",
@@ -940,7 +940,7 @@
       "explain": ""
     },
     {
-      "id": 179,
+      "id": 79,
       "q": "A foodservice establishment experiences a power outage and closes to protect the public. When can the establishment reopen?",
       "choices": {
         "A": "Once they have approval from the regulatory authority",
@@ -952,7 +952,7 @@
       "explain": ""
     },
     {
-      "id": 180,
+      "id": 80,
       "q": "A manager is notified of a recall on a specific food item. What must the manager do with the recalled item?",
       "choices": {
         "A": "Combine the item with non-recalled items during preparation",

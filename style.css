@@ -46,6 +46,15 @@
   font-weight: 700;
 }
 
+/* ---------- ServSafe credential badge ----------
+   Change the one width below to resize it; height follows automatically.
+   Native size is 197x121, so going much past that will look soft. */
+.site-logo {
+  width: 196px;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ---------- answer choices ---------- */
 
 /* The A/B/C/D letter in front of each choice. */
@@ -56,13 +65,25 @@
   color: var(--bs-secondary-color);
 }
 
-.quiz-choices .quiz-correct {
+/* The :hover/:focus/:active variants are not decoration - they are needed to
+   win a specificity fight. Bootstrap styles these buttons with
+   .list-group-item-action:not(.active):hover, which scores (0,3,0), so a plain
+   .quiz-choices .quiz-correct at (0,2,0) loses and the answer stays grey until
+   you move the pointer off it. Matching its specificity and coming later in
+   the file is what makes the colour land on click. */
+.quiz-choices .quiz-correct,
+.quiz-choices .quiz-correct:hover,
+.quiz-choices .quiz-correct:focus,
+.quiz-choices .quiz-correct:active {
   background-color: var(--bs-success-bg-subtle);
   border-color: var(--bs-success-border-subtle);
   font-weight: 600;
 }
 
-.quiz-choices .quiz-wrong {
+.quiz-choices .quiz-wrong,
+.quiz-choices .quiz-wrong:hover,
+.quiz-choices .quiz-wrong:focus,
+.quiz-choices .quiz-wrong:active {
   background-color: var(--bs-danger-bg-subtle);
   border-color: var(--bs-danger-border-subtle);
 }
@@ -113,6 +134,154 @@
   background-color: var(--bs-warning-bg-subtle);
   border-color: var(--bs-warning-border-subtle);
   color: var(--bs-warning-text-emphasis);
+}
+
+/* ---------- where you are in the test ----------
+   Only the current number is coloured. Tinting the whole line would just make
+   a quiet caption louder; picking out the one figure that changes is what
+   makes it readable at a glance. */
+.quiz-count-now {
+  color: var(--bs-primary);
+  font-weight: 700;
+}
+
+/* ---------- back to the test list ----------
+   The one way out of a running test, so it needs to be findable. 44px is the
+   usual minimum for a comfortable touch target; Bootstrap's default button is
+   a few pixels under that. */
+.quiz-back {
+  min-height: 44px;
+  font-weight: 500;
+}
+
+/* ---------- steady question area ----------
+   Question text, the four choices and the feedback box all change height, and
+   without a floor everything below them slides on every move - worst when the
+   feedback box appears out of nowhere the moment you answer.
+
+   A min-height on the region they share absorbs the variation instead. Sized
+   to a two-line question with four one-line choices and a one-line feedback
+   box, which covers the common case; a genuinely long question still grows
+   past it rather than being clipped. Raise this if the jumping comes back. */
+.quiz-body {
+  min-height: 22rem;
+}
+
+/* ---------- the question strip ----------
+   Ten cells at a time, laid out as three columns: chevron, cells, chevron.
+   Only the middle column wraps. Keeping the chevrons out of the wrapping
+   container is what makes them impossible to strand on a row of their own -
+   on a narrow phone the numbers reflow to 5 + 5 and the arrows stay put,
+   centred against the block. */
+.quiz-qnav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .5rem;
+  padding: .625rem;
+  background-color: var(--bs-secondary-bg-subtle);
+  border-radius: var(--bs-border-radius-lg);
+}
+
+/* Chevron columns: natural width, never squeezed. */
+.quiz-qnav-side {
+  flex: 0 0 auto;
+}
+
+/* The only part that wraps. */
+.quiz-qnav-cells {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .375rem;
+}
+
+.quiz-qnav-btn {
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  font-size: .8125rem;
+  font-weight: 500;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+}
+
+.quiz-qnav-btn:hover:not(:disabled) {
+  border-color: var(--bs-secondary-color);
+}
+
+/* The two chevrons. Greyed at the ends rather than removed, so the strip
+   keeps the same width and the cells do not shift under the cursor. */
+.quiz-qnav-step {
+  font-size: 1.125rem;
+  line-height: 1;
+  color: var(--bs-secondary-color);
+}
+
+.quiz-qnav-step:disabled {
+  opacity: .35;
+}
+
+/* Tighter on a phone so the ten cells reflow to two rows of five rather than
+   an uneven 4 + 4 + 2. */
+@media (max-width: 575.98px) {
+  .quiz-qnav {
+    gap: .375rem;
+    padding: .5rem;
+  }
+
+  .quiz-qnav-cells {
+    gap: .25rem;
+  }
+
+  .quiz-qnav-btn {
+    width: 2rem;
+    height: 2rem;
+    flex: 0 0 auto;        /* stops flex from squashing cells out of square */
+  }
+}
+
+.quiz-qnav-btn.is-correct {
+  background-color: var(--bs-success);
+  border-color: var(--bs-success);
+  color: #fff;
+}
+
+.quiz-qnav-btn.is-wrong {
+  background-color: var(--bs-danger);
+  border-color: var(--bs-danger);
+  color: #fff;
+}
+
+/* Where you are now. A ring rather than a fill, so it stays legible on top
+   of any of the three states underneath it. */
+.quiz-qnav-btn.is-current {
+  box-shadow: 0 0 0 2px var(--bs-body-bg), 0 0 0 4px var(--bs-primary);
+}
+
+.quiz-qnav-legend {
+  display: flex;
+  gap: 1rem;
+}
+
+.quiz-qnav-swatch {
+  display: inline-block;
+  width: .75rem;
+  height: .75rem;
+  margin-right: .375rem;
+  border-radius: 2px;
+  vertical-align: -1px;
+}
+
+.quiz-qnav-swatch.is-correct {
+  background-color: var(--bs-success);
+}
+
+.quiz-qnav-swatch.is-wrong {
+  background-color: var(--bs-danger);
 }
 
 /* ---------- question navigation ---------- */
