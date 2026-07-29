@@ -31,16 +31,23 @@ if (!Array.isArray(tests)) {
   process.exit(1);
 }
 
-const seenQuestionIds = new Set();   // question ids must be unique across ALL tests
 const seenTestIds = new Set();
 const seenSlugs = new Set();
 const expectedFiles = new Set();
+const hidden = [];     // listed in the catalog but "published": false
 let total = 0;
 
 tests.forEach((test, t) => {
   const entry = 'catalog.json entry ' + (t + 1);
 
   if (!test.title) problems.push(entry + ' has no "title".');
+
+  // A string "false" is truthy, so a quoted value would publish a test you
+  // meant to hide - and nothing on the site would look wrong.
+  if (test.published !== undefined && typeof test.published !== 'boolean') {
+    problems.push(entry + ' has "published": ' + JSON.stringify(test.published) +
+      '. It must be true or false with no quotes.');
+  }
 
   if (test.id === undefined) {
     problems.push(entry + ' has no "id".');
@@ -100,13 +107,21 @@ tests.forEach((test, t) => {
   }
 
   total += data.questions.length;
-  console.log('  ' + (test.title + ':').padEnd(24) + data.questions.length + ' questions  (' + file + ')');
+  // Hidden tests are still checked - parking one should not let its data rot.
+  if (test.published === false) hidden.push(test.title);
+  console.log('  ' + (test.title + ':').padEnd(24) + data.questions.length + ' questions  (' + file + ')' +
+    (test.published === false ? '   [hidden]' : ''));
+
+  // Ids only have to be unique inside their own test. Saved progress is stored
+  // as all[testId].answers[questionId], so a question id is only ever looked up
+  // within one test's bucket - two tests can both number their questions from 1.
+  const seenQuestionIds = new Set();
 
   data.questions.forEach((q, i) => {
     const where = file + ' question ' + (i + 1) + ' (id: ' + q.id + ')';
 
     if (q.id === undefined) problems.push(where + ' has no "id".');
-    else if (seenQuestionIds.has(q.id)) problems.push(where + ' has a DUPLICATE id (ids must be unique across all tests).');
+    else if (seenQuestionIds.has(q.id)) problems.push(where + ' has a DUPLICATE id (ids must be unique within this test).');
     else seenQuestionIds.add(q.id);
 
     if (!q.q) problems.push(where + ' has no "q" (question text).');
@@ -144,6 +159,12 @@ fs.readdirSync(DIR)
   .forEach(f => problems.push(DIR + '/' + f + ' is not listed in catalog.json, so it has no card.'));
 
 console.log('\nChecked ' + tests.length + ' tests, ' + total + ' questions.');
+
+// Stated plainly - a test left hidden by accident is invisible on the site,
+// which is exactly the mistake this line exists to catch.
+if (hidden.length) {
+  console.log(hidden.length + ' hidden, so not on the site: ' + hidden.join(', ') + '.');
+}
 
 // Missing explanations are fine - some source material has none.
 if (warnings.length) {

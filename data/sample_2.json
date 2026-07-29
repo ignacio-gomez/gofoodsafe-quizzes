@@ -1,0 +1,151 @@
+{
+  "id": "2",
+  "slug": "sample",
+  "name": "Sample Test",
+  "questions": [
+    {
+      "id": 1,
+      "q": "What is the maximum internal temperature for cold-holding TCS food?",
+      "choices": {
+        "A": "32°F (0°C)",
+        "B": "41°F (5°C)",
+        "C": "50°F (10°C)",
+        "D": "70°F (21°C)"
+      },
+      "answer": "B",
+      "explain": "TCS food held cold must stay at 41°F (5°C) or lower. Above that it enters the temperature danger zone, where bacteria grow quickly."
+    },
+    {
+      "id": 2,
+      "q": "What is the minimum internal cooking temperature for poultry?",
+      "choices": {
+        "A": "135°F (57°C)",
+        "B": "145°F (63°C)",
+        "C": "155°F (68°C)",
+        "D": "165°F (74°C)"
+      },
+      "answer": "D",
+      "explain": "Poultry must reach 165°F (74°C) for less than one second. This is the highest required cooking temperature, and it applies to whole birds, parts and ground poultry alike."
+    },
+    {
+      "id": 3,
+      "q": "When cooling hot food, it must drop from 135°F to 70°F within how long?",
+      "choices": {
+        "A": "1 hour",
+        "B": "2 hours",
+        "C": "4 hours",
+        "D": "6 hours"
+      },
+      "answer": "B",
+      "explain": "Cooling happens in two stages: 135°F to 70°F within 2 hours, then 70°F to 41°F within 4 more — 6 hours total. If the first stage takes longer than 2 hours, the food must be reheated and cooled again."
+    },
+    {
+      "id": 4,
+      "q": "What is the temperature danger zone?",
+      "choices": {
+        "A": "32°F to 100°F",
+        "B": "41°F to 135°F",
+        "C": "50°F to 150°F",
+        "D": "70°F to 165°F"
+      },
+      "answer": "B",
+      "explain": "Between 41°F and 135°F, pathogens grow fastest. Food should pass through this range as quickly as possible."
+    },
+    {
+      "id": 5,
+      "q": "What is the minimum internal cooking temperature for ground beef?",
+      "choices": {
+        "A": "135°F for 15 seconds",
+        "B": "145°F for 15 seconds",
+        "C": "155°F for 17 seconds",
+        "D": "165°F for 1 second"
+      },
+      "answer": "C",
+      "explain": "Grinding spreads surface bacteria throughout the meat, so ground beef needs 155°F for 17 seconds — higher than the 145°F required for a whole cut."
+    },
+    {
+      "id": 6,
+      "q": "What is the minimum temperature for hot-holding TCS food?",
+      "choices": {
+        "A": "115°F (46°C)",
+        "B": "125°F (52°C)",
+        "C": "135°F (57°C)",
+        "D": "155°F (68°C)"
+      },
+      "answer": "C",
+      "explain": "Hot-held food must stay at 135°F (57°C) or above. Hot holding keeps food safe — it does not make unsafe food safe."
+    },
+    {
+      "id": 7,
+      "q": "Which of these is one of the Big 6 pathogens?",
+      "choices": {
+        "A": "Clostridium botulinum",
+        "B": "Shigella spp.",
+        "C": "Bacillus cereus",
+        "D": "Listeria monocytogenes"
+      },
+      "answer": "B",
+      "explain": "The Big 6 are Norovirus, Hepatitis A, Salmonella Typhi, nontyphoidal Salmonella, Shigella spp., and Shiga toxin-producing E. coli. A food handler diagnosed with any of them must be excluded or restricted."
+    },
+    {
+      "id": 8,
+      "q": "Leftover soup is being reheated for hot holding. What temperature must it reach, and how quickly?",
+      "choices": {
+        "A": "135°F within 2 hours",
+        "B": "155°F within 4 hours",
+        "C": "165°F within 2 hours",
+        "D": "165°F within 6 hours"
+      },
+      "answer": "C",
+      "explain": "TCS food reheated for hot holding must reach 165°F for 15 seconds within 2 hours. The time limit matters as much as the temperature — slow reheating leaves food in the danger zone too long."
+    },
+    {
+      "id": 9,
+      "q": "What is the correct concentration range for a chlorine sanitizer solution?",
+      "choices": {
+        "A": "10–25 ppm",
+        "B": "50–99 ppm",
+        "C": "150–200 ppm",
+        "D": "300–400 ppm"
+      },
+      "answer": "B",
+      "explain": "Chlorine sanitizer works at 50–99 ppm. Too weak will not sanitize; too strong is unsafe and can leave residue. Test strips should be used to check."
+    },
+    {
+      "id": 10,
+      "q": "How long must shellstock identification tags be kept on file after the last shellfish from the container is served?",
+      "choices": {
+        "A": "7 days",
+        "B": "30 days",
+        "C": "90 days",
+        "D": "1 year"
+      },
+      "answer": "C",
+      "explain": "Shellstock tags must be kept for 90 days from the date the last shellfish was used. If an illness outbreak is traced back, those tags identify exactly which harvest the shellfish came from."
+    },
+    {
+      "id": 11,
+      "q": "A walk-in cooler holds raw ground beef, raw chicken breasts, raw salmon, and a pan of ready-to-eat potato salad. Working from the top shelf down to the bottom shelf, what is the correct storage order?",
+      "choices": {
+        "A": "Potato salad, salmon, ground beef, chicken",
+        "B": "Chicken, ground beef, salmon, potato salad",
+        "C": "Potato salad, ground beef, chicken, salmon",
+        "D": "Salmon, potato salad, chicken, ground beef"
+      },
+      "answer": "A",
+      "explain": "Food is stored top to bottom in order of minimum cooking temperature, so nothing drips onto something that will be cooked to a lower temperature. Ready-to-eat food goes at the very top, then seafood (145°F), whole cuts (145°F), ground meat (155°F), and poultry at the bottom (165°F)."
+    },
+    {
+      "id": 12,
+      "q": "A food handler finishes cutting raw chicken and needs to prepare a salad next. The cutting board and knife are visibly clean, the kitchen is busy, and the salad is going out to a customer with no further cooking. What is the correct thing to do before starting the salad?",
+      "choices": {
+        "A": "Wipe the board and knife with a clean cloth, then start the salad",
+        "B": "Rinse the board and knife under hot running water, then start the salad",
+        "C": "Wash, rinse and sanitize the board and knife, then wash hands before starting",
+        "D": "Turn the cutting board over and use the other side for the salad"
+      },
+      "answer": "C",
+      "explain": "Anything touching raw poultry must be washed, rinsed and sanitized before touching ready-to-eat food, and hands must be washed as well. Looking clean is not the same as being sanitized — the salad will not be cooked, so there is no later step to kill what gets transferred."
+    }
+  ]
+}

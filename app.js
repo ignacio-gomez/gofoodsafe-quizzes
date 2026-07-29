@@ -29,9 +29,11 @@ const el = {
   fbTitle: document.getElementById('feedback-title'),
   fbRule: document.getElementById('feedback-rule'),
   fbExplain: document.getElementById('feedback-explain'),
+  quizTitle: document.getElementById('quiz-title'),
+  questionNav: document.getElementById('question-nav'),
   progressText: document.getElementById('progress-text'),
-  progressFill: document.getElementById('progress-fill'),
   scoreText: document.getElementById('score-text'),
+  finalTitle: document.getElementById('final-title'),
   finalScore: document.getElementById('final-score'),
   finalPercent: document.getElementById('final-percent'),
   finalMessage: document.getElementById('final-message')
@@ -42,7 +44,15 @@ async function loadTests() {
   try {
     const res = await fetch('data/catalog.json');
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    tests = await res.json();
+
+    // "published": false keeps a test in the catalog but off the site - a way
+    // to park a half-written test without deleting the entry. Only an explicit
+    // false hides it, so an entry with no key at all still shows.
+    //
+    // Filtered here rather than in renderTests because cards address their test
+    // by position in this array; dropping entries later would shift every index
+    // after the hidden one and open the wrong test.
+    tests = (await res.json()).filter(t => t.published !== false);
     renderTests();
   } catch (err) {
     showError('Could not load the list of tests (' + err.message + ').');
@@ -231,9 +241,13 @@ function renderQuestion() {
   const q = quiz[current];
   const picked = answers[current];     // null if not answered yet
 
-  el.progressText.textContent = 'Question ' + (current + 1) + ' of ' + quiz.length;
+  el.quizTitle.textContent = currentTest ? currentTest.title : '';
+
+  // Both numbers are array positions, never anything from a test file, so
+  // there is nothing here that needs escaping.
+  el.progressText.innerHTML = 'Question <span class="quiz-count-now">' +
+    (current + 1) + '</span> of ' + quiz.length;
   el.scoreText.textContent = 'Score ' + scoreSoFar();
-  el.progressFill.style.width = ((current / quiz.length) * 100) + '%';
 
   el.questionText.textContent = q.q;
 
@@ -261,34 +275,101 @@ function renderQuestion() {
     markAnswered(picked);
   }
 
+  renderQuestionNav();
   updateNav();
 }
 
-// Paint the answered state: right one green, your wrong pick red.
-// Choices stay clickable - this is practice, so changing your mind is fine.
+// Paint the answered state. A wrong pick goes red and nothing else moves - the
+// right answer is deliberately NOT revealed, so they have to think and pick
+// again rather than being handed it. Choices stay clickable, and a later pick
+// overwrites the earlier one, so getting there on the second try counts.
 function markAnswered(picked) {
   const q = quiz[current];
   const correct = (picked === q.answer);
 
   el.choices.querySelectorAll('button').forEach(b => {
     b.classList.remove('quiz-correct', 'quiz-wrong');   // clear the previous pick
-    if (b.dataset.choice === q.answer) b.classList.add('quiz-correct');
-    else if (b.dataset.choice === picked) b.classList.add('quiz-wrong');
+    if (b.dataset.choice !== picked) return;            // only ever mark their own pick
+    b.classList.add(correct ? 'quiz-correct' : 'quiz-wrong');
   });
 
   // The letter is a choice key, validated as a single letter, so it is safe
   // to drop into markup.
   el.fbTitle.innerHTML = correct
     ? '<span class="fw-bold">Correct</span>'
-    : '<span class="fw-bold">' + picked + '</span> is incorrect';
+    : '<span class="fw-bold">' + picked + '</span> is incorrect &mdash; try another.';
 
-  // Some source material has no explanations, so hide the empty parts.
-  const explain = q.explain || '';
+  // Only shown once they have it right. An explanation on a wrong answer would
+  // hand over the thing we just declined to highlight.
+  const explain = correct ? (q.explain || '') : '';
   el.fbExplain.textContent = explain;
   el.fbExplain.classList.toggle('d-none', explain === '');
-  el.fbRule.classList.toggle('d-none', correct || explain === '');
+  el.fbRule.classList.toggle('d-none', explain === '');
   el.feedback.classList.remove('d-none');
 }
+
+/* ---------- The question strip ----------
+   A window of NAV_PAGE cells with a chevron each side, rather than all 80 at
+   once. The window is derived from `current`, never stored - so jumping by any
+   route (chevron, cell, Next, resuming a saved run) lands on a strip showing
+   the question you are actually on. Tinted by how each was answered, redrawn
+   whenever an answer changes. State is in the aria-label too - colour alone
+   would leave a screen reader with bare numbers. */
+const NAV_PAGE = 10;
+
+function navStep(dir, disabled, target) {
+  return '<button type="button" class="quiz-qnav-btn quiz-qnav-step"' +
+    (disabled ? ' disabled' : ' data-q="' + target + '"') +
+    ' aria-label="' + (dir === 'prev' ? 'Previous' : 'Next') + ' ' + NAV_PAGE + ' questions">' +
+    (dir === 'prev' ? '&lsaquo;' : '&rsaquo;') +
+    '</button>';
+}
+
+function renderQuestionNav() {
+  const pages = Math.ceil(quiz.length / NAV_PAGE);
+  const page = Math.floor(current / NAV_PAGE);
+  const start = page * NAV_PAGE;
+  const end = Math.min(start + NAV_PAGE, quiz.length);
+
+  let cells = '';
+
+  for (let i = start; i < end; i++) {
+    const picked = answers[i];
+    const state = picked === null ? 'unanswered'
+      : (picked === quiz[i].answer ? 'correct' : 'incorrect');
+
+    let cls = 'quiz-qnav-btn';
+    if (state === 'correct') cls += ' is-correct';
+    else if (state === 'incorrect') cls += ' is-wrong';
+    if (i === current) cls += ' is-current';
+
+    cells += '<button type="button" class="' + cls + '" data-q="' + i + '"' +
+      ' aria-label="Question ' + (i + 1) + ', ' + state + '"' +
+      (i === current ? ' aria-current="true"' : '') +
+      '>' + (i + 1) + '</button>';
+  }
+
+  // Three columns: chevron, the wrapping block of cells, chevron. The chevrons
+  // sit outside the block that wraps, so neither can ever be carried onto a
+  // row of its own however narrow the screen gets.
+  el.questionNav.innerHTML =
+    '<div class="quiz-qnav-side">' +
+      navStep('prev', page === 0, start - NAV_PAGE) +
+    '</div>' +
+    '<div class="quiz-qnav-cells">' + cells + '</div>' +
+    '<div class="quiz-qnav-side">' +
+      navStep('next', page >= pages - 1, start + NAV_PAGE) +
+    '</div>';
+}
+
+// One listener on the strip, so cells redrawn later still work.
+el.questionNav.addEventListener('click', e => {
+  const btn = e.target.closest('button[data-q]');
+  if (!btn) return;
+  current = Number(btn.dataset.q);
+  saveProgress();
+  renderQuestion();
+});
 
 function updateNav() {
   el.btnPrev.disabled = (current === 0);
@@ -311,6 +392,7 @@ function scoreSoFar() {
 function answer(picked) {
   answers[current] = picked;      // overwrites any earlier pick
   markAnswered(picked);
+  renderQuestionNav();            // the cell turns green or red straight away
   el.scoreText.textContent = 'Score ' + scoreSoFar();
   saveProgress();
 }
@@ -339,6 +421,12 @@ function showResults() {
     clearProgress(currentTest.id);   // finished, so nothing left to resume
   }
   renderTests();          // redraw first, so the test just finished shows as done
+
+  // Name the test they just finished. Falls back to the old wording if this is
+  // somehow reached without a test, and textContent keeps a title from a JSON
+  // file out of the markup.
+  el.finalTitle.textContent = currentTest ? currentTest.title : 'Test complete';
+
   const score = scoreSoFar();
   const pct = Math.round((score / quiz.length) * 100);
   el.finalScore.textContent = score + ' / ' + quiz.length;
