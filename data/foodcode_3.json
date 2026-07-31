@@ -1,0 +1,487 @@
+{
+  "id": "3",
+  "slug": "foodcode",
+  "name": "2022 Food Code Practice Test",
+  "questions": [
+    {
+      "id": 1,
+      "q": "Which agency enforces food safety in a restaurant or foodservice operation?",
+      "choices": {
+        "A": "Centers for Disease Control and Prevention",
+        "B": "Food and Drug Administration",
+        "C": "State or local regulatory authority",
+        "D": "U.S. Department of Agriculture"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 2,
+      "q": "Three components of active managerial control include",
+      "choices": {
+        "A": "identifying risks, creating specifications, and training.",
+        "B": "identifying risks, corrective action, and training.",
+        "C": "identifying risks, creating purchase orders, and training.",
+        "D": "identifying risks, re-certifying equipment, and training."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 3,
+      "q": "Sewage is backing up from a floor drain in a prep area. What is the first thing that should be done?",
+      "choices": {
+        "A": "Notify the local regulatory authority",
+        "B": "Stop service in the operation",
+        "C": "Determine if there is a significant risk to food",
+        "D": "Attempt to unblock the drain"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 4,
+      "q": "To prevent the deliberate contamination of food, a manager should know who is in the facility, monitor the security of products, keep food defense information accessible, and know",
+      "choices": {
+        "A": "when to register with the EPA.",
+        "B": "how to fill out an incident report.",
+        "C": "where to find Safety Data Sheets in the operation.",
+        "D": "whom to contact about suspicious activity."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 5,
+      "q": "A food handler who has just used their cell phone must do what before handling food?",
+      "choices": {
+        "A": "Apply hand antiseptic",
+        "B": "Wash hands",
+        "C": "Put disposable gloves back on",
+        "D": "Wipe hands on a cloth towel"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 6,
+      "q": "As part of handwashing, food handlers must scrub their hands and arms with soap for at least",
+      "choices": {
+        "A": "3 seconds.",
+        "B": "5 seconds.",
+        "C": "10 seconds.",
+        "D": "20 seconds."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 7,
+      "q": "To work with food, a food handler with an infected hand wound must",
+      "choices": {
+        "A": "cover the wound with an impermeable cover and wear a single-use glove.",
+        "B": "cover the wound with an impermeable cover and limit contact with food.",
+        "C": "wash hands and bandage the wound with an impermeable cover.",
+        "D": "apply ointment and bandage the wound with an impermeable cover."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 8,
+      "q": "How should food handlers keep their fingernails?",
+      "choices": {
+        "A": "Short and unfiled",
+        "B": "Short and unpolished",
+        "C": "Long and unfiled",
+        "D": "Long and unpolished"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 9,
+      "q": "What should a manager of a quick-service operation do if a food handler reports having a sore throat and a fever?",
+      "choices": {
+        "A": "Exclude the food handler from the operation.",
+        "B": "Report the illness to the local regulatory authority.",
+        "C": "Speak with the food handler's medical practitioner.",
+        "D": "Restrict the food handler from working with exposed food, utensils, and equipment."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 10,
+      "q": "What action should a manager take when a food handler reports having diarrhea and being diagnosed with a foodborne illness caused by Shigella spp.?",
+      "choices": {
+        "A": "Keep the food handler away from duties that involve food.",
+        "B": "Exclude the food handler from the operation.",
+        "C": "Make sure the food handler is supplied with disposable gloves.",
+        "D": "Make sure the food handler washes hands often."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 11,
+      "q": "Which food handler is less likely to contaminate food, utensils, and equipment?",
+      "choices": {
+        "A": "Server eating soup at the server station",
+        "B": "Dishwasher chewing gum while washing dishes",
+        "C": "Prep cook drinking a can of soda while prepping food",
+        "D": "Chef smoking in a designated area outside the establishment"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 12,
+      "q": "How long must shellstock tags or labels be kept on file?",
+      "choices": {
+        "A": "30 days after the day the shellfish were received",
+        "B": "90 days after the day the shellfish were received",
+        "C": "30 days after the last shellfish was removed from the container",
+        "D": "90 days after the last shellfish was removed from the container"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 13,
+      "q": "When receiving a delivery of food for an operation, it is important to",
+      "choices": {
+        "A": "inspect only the TCS food.",
+        "B": "inspect all food immediately before storing it.",
+        "C": "inspect it within two hours.",
+        "D": "store it immediately and inspect it later."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 14,
+      "q": "Which item is stored correctly in the cooler?",
+      "choices": {
+        "A": "Macaroni salad stored above raw salmon",
+        "B": "Raw ground pork stored below raw poultry",
+        "C": "Raw poultry stored above raw pork roast",
+        "D": "Sliced pineapple stored below raw steaks"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 15,
+      "q": "Ready-to-eat TCS food must be date marked if it will be stored for longer than",
+      "choices": {
+        "A": "12 hours.",
+        "B": "24 hours.",
+        "C": "36 hours.",
+        "D": "48 hours."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 16,
+      "q": "A recall has been issued for a specific brand of orange juice. The store manager has matched the information from the recall notice to the item, removed the item from inventory, and stored it in a secure location. What should the manager do next?",
+      "choices": {
+        "A": "Refer to the vendor notification for next steps",
+        "B": "Contact the supplier and arrange for the product to be picked up",
+        "C": "Label the item to prevent it from accidently being placed back in inventory",
+        "D": "Inform the local media, customers, and employees of the reason for the recall"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 17,
+      "q": "What is the maximum amount of time that ready-to-eat TCS food can be stored in a cooler at 41°F (5°C) before it must be sold, served, or thrown out?",
+      "choices": {
+        "A": "2 days",
+        "B": "5 days",
+        "C": "7 days",
+        "D": "9 days"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 18,
+      "q": "Pathogens are likely to grow well in a meat stew that is",
+      "choices": {
+        "A": "below freezing temperature.",
+        "B": "at refrigeration temperatures.",
+        "C": "between 41°F and 135°F (5°C and 57°C).",
+        "D": "cooked to the correct internal temperature."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 19,
+      "q": "Which is a TCS food?",
+      "choices": {
+        "A": "Bananas",
+        "B": "Coffee",
+        "C": "Crackers",
+        "D": "Sprouts"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 20,
+      "q": "Cut melons should be stored at what internal temperature?",
+      "choices": {
+        "A": "41°F (5°C) or lower",
+        "B": "45°F (7°C) or lower",
+        "C": "51°F (11°C) or lower",
+        "D": "55°F (13°C) or lower"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 21,
+      "q": "Why are preschool-age children at a higher risk for getting a foodborne illness?",
+      "choices": {
+        "A": "They do not have strong appetites.",
+        "B": "They do not receive enough nutrition.",
+        "C": "They are more likely to suffer allergic reactions.",
+        "D": "They have not yet built up their immune systems."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 22,
+      "q": "What is one factor that affects the growth of bacteria in food?",
+      "choices": {
+        "A": "Leanness",
+        "B": "Density",
+        "C": "Ripeness",
+        "D": "Acidity"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 23,
+      "q": "Using one set of cutting boards for raw poultry and another set of cutting boards for ready-to-eat food reduces the risk of",
+      "choices": {
+        "A": "cross-contamination.",
+        "B": "time-temperature abuse.",
+        "C": "physical contamination.",
+        "D": "toxic-metal poisoning."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 24,
+      "q": "Peanuts and soy products are two possible food items that can be dangerous for people with",
+      "choices": {
+        "A": "FAT TOM.",
+        "B": "food allergies.",
+        "C": "chemical sensitivity.",
+        "D": "poor personal hygiene."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 25,
+      "q": "Wheezing and hives are symptoms of",
+      "choices": {
+        "A": "food allergies.",
+        "B": "Norovirus.",
+        "C": "botulism.",
+        "D": "hepatitis A."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 26,
+      "q": "A catering employee removed a 135°F (57°C) tray of lasagna from hot-holding for service in a hotel conference room at 11:00 am. By what time must the lasagna be thrown out?",
+      "choices": {
+        "A": "12:00 p.m.",
+        "B": "2:00 p.m.",
+        "C": "3:00 p.m.",
+        "D": "4:00 p.m."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 27,
+      "q": "Which of these operations is never allowed to hold TCS food without temperature control?",
+      "choices": {
+        "A": "Catered event",
+        "B": "Nursing home",
+        "C": "Bar with a Happy Hour",
+        "D": "Bakery"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 28,
+      "q": "Which action could contaminate food at a self-service area?",
+      "choices": {
+        "A": "Keeping hot TCS food at 135°F (57°C)",
+        "B": "Allowing customers to reuse plates",
+        "C": "Labeling all containers and handles",
+        "D": "Taking food temperatures every hour"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 29,
+      "q": "Which food item may be handled with bare hands?",
+      "choices": {
+        "A": "Cooked pasta for salad",
+        "B": "Chopped potatoes for soup",
+        "C": "Canned tuna for sandwiches",
+        "D": "Pickled watermelon for garnish"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 30,
+      "q": "When preparing to wash dishes in a three-compartment sink, what is the first task?",
+      "choices": {
+        "A": "Remove leftover food from the dishes.",
+        "B": "Fill the first sink with detergent and water.",
+        "C": "Clean and sanitize the sinks and drain boards.",
+        "D": "Make sure there is a working clock with a second hand."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 31,
+      "q": "When pouring sanitizer from its original container into a spray bottle, the spray bottle must be labeled with the",
+      "choices": {
+        "A": "common name of the chemical.",
+        "B": "expiration date of the chemical.",
+        "C": "date the chemical was transferred.",
+        "D": "name of the person who transferred the chemical."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 32,
+      "q": "Which does not require sanitizing?",
+      "choices": {
+        "A": "Plates",
+        "B": "Knives",
+        "C": "Walls",
+        "D": "Tongs"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 33,
+      "q": "What is the definition of sanitizing?",
+      "choices": {
+        "A": "Washing a surface to a clean level",
+        "B": "Using a cloth on a surface until it is clean",
+        "C": "Removing the amount of dirt on a surface to safe levels",
+        "D": "Reducing the pathogens on a surface to safe levels"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 34,
+      "q": "To make sure that the chemical sanitizer being used on a food-prep surface is at the correct strength,",
+      "choices": {
+        "A": "rinse it from the surface and then apply it a second time.",
+        "B": "test the surface first to confirm that there are no pathogens.",
+        "C": "heat it to the temperature recommended by the manufacturer.",
+        "D": "use a test kit to check the sanitizer's concentration when mixing it."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 35,
+      "q": "Outdoor garbage containers must be",
+      "choices": {
+        "A": "moved frequently.",
+        "B": "kept covered with tight-fitting lids.",
+        "C": "kept away from customer parking areas.",
+        "D": "lined with plastic or wet-strength paper."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 36,
+      "q": "What is a cross-connection?",
+      "choices": {
+        "A": "Threaded faucet",
+        "B": "Device that prevents a vacuum",
+        "C": "Brass valve that mixes hot and cold water",
+        "D": "Physical link between sources of safe and dirty water"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 37,
+      "q": "What step must managers take after creating a master cleaning schedule and training staff to use it?",
+      "choices": {
+        "A": "Monitor the cleaning program",
+        "B": "Determine what should be cleaned",
+        "C": "Determine who should do each task",
+        "D": "Time staff on how long they take to clean"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 38,
+      "q": "A handwashing station should have running water supplied at a temperature of at least",
+      "choices": {
+        "A": "70°F (21°C).",
+        "B": "75°F (24°C).",
+        "C": "80°F (27°C).",
+        "D": "85°F (29°C)."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 39,
+      "q": "What is the best way to eliminate pests that have entered the operation?",
+      "choices": {
+        "A": "Raise the heat in the operation after-hours.",
+        "B": "Lower the heat in the operation after-hours.",
+        "C": "Work with a licensed pest control operator (PCO).",
+        "D": "Apply over-the-counter pesticides around the operation."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 40,
+      "q": "How high should floor-mounted equipment be from the floor?",
+      "choices": {
+        "A": "At least 1 inch (3 centimeters)",
+        "B": "At least 2 inches (5 centimeters)",
+        "C": "At least 4 inches (10 centimeters)",
+        "D": "At least 6 inches (15 centimeters)"
+      },
+      "answer": "D",
+      "explain": ""
+    }
+  ]
+}
