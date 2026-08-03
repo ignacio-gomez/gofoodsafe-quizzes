@@ -164,7 +164,7 @@ function renderTests() {
     // Finished tests are tinted rather than badged, so the label stays just
     // the name. A half-finished run gets its own tint and a tooltip.
     const started = done[test.id] ? 0 : answeredCount(test.id);
-    const cls = 'btn btn-outline-secondary d-flex justify-content-between align-items-center' +
+    const cls = 'btn btn-outline-primary d-flex justify-content-between align-items-center' +
       (done[test.id] ? ' quiz-grid-done' : (started ? ' quiz-grid-started' : ''));
     const tip = done[test.id]
       ? test.title + ' - done'
@@ -173,7 +173,7 @@ function renderTests() {
       '<button type="button" data-test="' + i + '" class="' + cls + '"' +
       '        title="' + escapeHtml(tip) + '">' +
       '  <span class="text-truncate">' + escapeHtml(test.title) + '</span>' +
-      '  <span class="ms-1">&rsaquo;</span>' +
+      '  <span class="quiz-grid-arrow ms-1">&rsaquo;</span>' +
       '</button>';
   }).join('');
 

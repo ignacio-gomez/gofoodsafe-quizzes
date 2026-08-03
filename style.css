@@ -15,18 +15,47 @@
    collapse, so the component brings nothing but markup to fight. */
 .site-nav {
   background-color: #0f1214;
+
+  /* Bootstrap's dark-theme hamburger is rgba(255,255,255,.55), which reads
+     grey against this bar. Same SVG, stroke swapped to solid white. */
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+/* The sliding panel. Same near-black as the bar, so opening it reads as the
+   bar expanding rather than a different surface arriving. */
+.site-menu {
+  background-color: #0f1214;
+}
+
+/* Panel size, mobile only. Kept inside a max-width query because Bootstrap
+   neutralises width with width:auto!important when it inlines the offcanvas
+   but says nothing about max-width - left unscoped, the 20rem cap survives
+   into desktop and traps the centred row in a 320px box on the left. */
+@media (max-width: 767.98px) {
+  .site-menu {
+    width: 80%;
+    max-width: 20rem;
+  }
+}
+
+/* Below md the links stack inside the panel; the rule further down turns
+   them back into the centred row once the offcanvas becomes inline. */
 .site-nav-list {
   display: flex;
-  justify-content: center;
-  gap: 2.5rem;
+  flex-direction: column;
   margin: 0;
-  padding: 1.5rem 1rem;
+  padding: 0;
   list-style: none;
 }
 
+/* A hairline between stacked items, as on the main site's menu. */
+.site-nav-list li + li {
+  border-top: 1px solid rgba(255, 255, 255, .15);
+}
+
 .site-nav-list a {
+  display: block;
+  padding: 1rem 0;
   color: rgba(255, 255, 255, .72);
   font-size: .8125rem;
   font-weight: 500;
@@ -44,6 +73,34 @@
 .site-nav-list .is-active {
   color: #fff;
   font-weight: 700;
+}
+
+/* At md and up Bootstrap makes the offcanvas inline and hides the toggler,
+   so the panel styling has to be undone and the original row restored. */
+@media (min-width: 768px) {
+  /* Bootstrap inlines the body with flex-grow:0, so it hugs its contents and
+     there is no spare width for justify-content to work with. Three classes
+     deep to match the specificity of .navbar-expand-md .offcanvas
+     .offcanvas-body - a shorter selector loses and the links sit left. */
+  .site-nav .offcanvas .offcanvas-body {
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .site-nav-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .site-nav-list li + li {
+    border-top: 0;
+  }
+
+  .site-nav-list a {
+    padding: 0;
+  }
 }
 
 /* ---------- ServSafe credential badge ----------
@@ -120,6 +177,15 @@
   font-size: .8125rem;
   min-width: 0;            /* lets the name truncate instead of overflowing */
   text-align: left;
+}
+
+/* The arrow is the only thing on the card that says "this opens something",
+   so it carries more weight than the label. line-height:1 keeps it from
+   stretching the button now that it is larger than the text beside it. */
+.quiz-grid-arrow {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
 }
 
 /* Finished tests, marked without adding anything to the label. */
