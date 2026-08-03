@@ -1,0 +1,487 @@
+{
+  "id": "2",
+  "slug": "practice",
+  "name": "2026 Practice Test",
+  "questions": [
+    {
+      "id": 1,
+      "q": "What is important when creating a self-inspection program?",
+      "choices": {
+        "A": "It should mirror a regulatory inspection.",
+        "B": "It should focus on foodborne-illness complaints.",
+        "C": "It should focus on customer satisfaction surveys.",
+        "D": "It should focus on food safety violations that are easy to fix."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 2,
+      "q": "When should self-inspections be performed in an operation?",
+      "choices": {
+        "A": "Only when food safety issues are suspected",
+        "B": "Primarily when preparing for a regulatory inspection",
+        "C": "Only after receiving a customer food safety complaint",
+        "D": "In addition to and more often than regulatory inspections"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 3,
+      "q": "Who should be restricted from working with or around food?",
+      "choices": {
+        "A": "A food handler who is vomiting",
+        "B": "A food handler who has diarrhea",
+        "C": "A food handler who has jaundice",
+        "D": "A food handler with a sore throat and fever"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 4,
+      "q": "Which symptoms must be reported to the regulatory authority?",
+      "choices": {
+        "A": "Vomiting",
+        "B": "Diarrhea",
+        "C": "Jaundice",
+        "D": "Sore throat and fever"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 5,
+      "q": "What is the maximum amount of time single-use gloves can be worn before they must be changed?",
+      "choices": {
+        "A": "One hour",
+        "B": "Two hours",
+        "C": "Three hours",
+        "D": "Four hours"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 6,
+      "q": "Why are short fingernails required for food handlers?",
+      "choices": {
+        "A": "They are easier to keep clean.",
+        "B": "They reduce the need to wash hands.",
+        "C": "They prevent single-use gloves from slipping off.",
+        "D": "They reduce the risk of spreading airborne pathogens."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 7,
+      "q": "Which is one of the Big Nine food allergens?",
+      "choices": {
+        "A": "Avocado",
+        "B": "Celery",
+        "C": "Sesame",
+        "D": "Mustard"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 8,
+      "q": "Which is a symptom of an allergic reaction?",
+      "choices": {
+        "A": "Sweating",
+        "B": "Wheezing",
+        "C": "Vomiting",
+        "D": "Jaundice"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 9,
+      "q": "Which situation would result in cross-contact?",
+      "choices": {
+        "A": "Storing raw beef above ready-to-eat food",
+        "B": "Cooking chicken and shrimp in the same fryer",
+        "C": "Using the same cutting board for raw chicken and lettuce",
+        "D": "Temping chicken and then ground beef with the same thermometer"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 10,
+      "q": "What must be included on the label of a restaurant's signature BBQ sauce sold to the public?",
+      "choices": {
+        "A": "pH of the sauce",
+        "B": "Instructions for use",
+        "C": "Nutritional information",
+        "D": "Source of each major food allergen"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 11,
+      "q": "What is required to be an approved supplier?",
+      "choices": {
+        "A": "They use tamper-evident packaging.",
+        "B": "They have a clean and modern facility.",
+        "C": "They offer traceability for all ingredients.",
+        "D": "They meet all applicable local, state, and federal laws."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 12,
+      "q": "At what temperature must most cold TCS food be received?",
+      "choices": {
+        "A": "41°F (5°C) or lower",
+        "B": "45°F (7°C) or lower",
+        "C": "50°F (10°C) or lower",
+        "D": "55°F (13°C) or lower"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 13,
+      "q": "What discard date should be placed on a label of beef chili prepared on October 1?",
+      "choices": {
+        "A": "October 1",
+        "B": "October 3",
+        "C": "October 7",
+        "D": "October 8"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 14,
+      "q": "These foods must be stored in the same cooler. In which top-to-bottom order should they be stored to prevent cross-contamination?",
+      "choices": {
+        "A": "Salad greens; raw beef roast; raw salmon; raw chicken; raw ground beef",
+        "B": "Salad greens; raw salmon; raw beef roast; raw ground beef; raw chicken",
+        "C": "Salad greens; raw ground beef; raw salmon; raw beef roast; raw chicken",
+        "D": "Salad greens; raw salmon; raw ground beef; raw beef roast; raw chicken"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 15,
+      "q": "Which food is in the temperature danger zone?",
+      "choices": {
+        "A": "Soup held in a hot-holding unit at 136°F (58°C)",
+        "B": "Meat loaf stored in a cooler at 38°F (3°C)",
+        "C": "Raw chicken delivered at 40°F (4°C)",
+        "D": "Cooked rice at 72°F (22°C) and left out for two hours"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 16,
+      "q": "Which food was thawed correctly?",
+      "choices": {
+        "A": "Salmon thawed on a prep table",
+        "B": "Turkey thawed in a cooler at 38°F (3°C)",
+        "C": "Shrimp thawed in a sink full of water at 70°F (21°C)",
+        "D": "Steaks thawed in a microwave and then placed in a cooler until needed"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 17,
+      "q": "Which food must be cooked to a minimum internal temperature of 155°F (68°C) for 17 seconds?",
+      "choices": {
+        "A": "Blackened catfish",
+        "B": "Cheeseburger",
+        "C": "New York strip steak",
+        "D": "Stuffed pasta"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 18,
+      "q": "Which food must be cooked to a minimum internal temperature of 165°F (74°C) for 15 seconds?",
+      "choices": {
+        "A": "Lamb chops",
+        "B": "Ostrich steak",
+        "C": "Oyster stuffing",
+        "D": "Buffalo burger"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 19,
+      "q": "What minimum internal temperature must rice be cooked to?",
+      "choices": {
+        "A": "135°F (57°C)",
+        "B": "145°F (63°C) for 15 seconds",
+        "C": "155°F (68°C) for 17 seconds",
+        "D": "165°F (74°C) for 15 seconds"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 20,
+      "q": "Chicken breasts will be partially cooked, cooled, and then finished as they are ordered. What is the maximum amount of time allowed for the initial cooking step?",
+      "choices": {
+        "A": "15 minutes",
+        "B": "30 minutes",
+        "C": "60 minutes",
+        "D": "90 minutes"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 21,
+      "q": "Which food was cooled correctly?",
+      "choices": {
+        "A": "Clam chowder cooled from 135°F to 70°F (57°C to 21°C) in one hour and then from 70°F to 41°F (21°C to 5°C) in six hours",
+        "B": "Chili cooled from 135°F to 70°F (57°C to 21°C) in two hours and then from 70°F to 41°F (21°C to 5°C) in four hours",
+        "C": "Jambalaya cooled from 135°F to 70°F (57°C to 21°C) in three hours and then from 70°F to 41°F (21°C to 5°C) in two hours",
+        "D": "Macaroni and cheese cooled from 135°F to 70°F (57°C to 21°C) in four hours and then from 70°F to 41°F (21°C to 5°C) in two hours"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 22,
+      "q": "Which is an acceptable method for cooling hot food?",
+      "choices": {
+        "A": "Placing the food directly in a cooler",
+        "B": "Placing the food in an ice-water bath",
+        "C": "Leaving the food at room temperature",
+        "D": "Rinsing the food with cold water"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 23,
+      "q": "To what temperature must TCS food be reheated for hot holding?",
+      "choices": {
+        "A": "135°F (57°C) within two hours",
+        "B": "145°F (63°C) for 15 seconds within two hours",
+        "C": "155°F (68°C) for 17 seconds within two hours",
+        "D": "165°F (74°C) for 15 seconds within two hours"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 24,
+      "q": "Which food is being held safely?",
+      "choices": {
+        "A": "Minestrone soup held at 125°F (52°C)",
+        "B": "Chili held at 136°F (58°C)",
+        "C": "Potato salad held at 70°F (21°C)",
+        "D": "Cut melon held at 65°F (18°C)"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 25,
+      "q": "What is the minimum amount of time that food temperatures must be checked when holding food?",
+      "choices": {
+        "A": "At least hourly",
+        "B": "At least every two hours",
+        "C": "At least every three hours",
+        "D": "At least every four hours"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 26,
+      "q": "What is required in jurisdictions that permit the refilling of containers returned by a customer?",
+      "choices": {
+        "A": "The container must be a single-service container.",
+        "B": "The container must be cleaned and sanitized by the food handler.",
+        "C": "The container must be visually inspected by the customer.",
+        "D": "The container must be verified by the FDA."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 27,
+      "q": "Which foods cannot be re-served to another customer?",
+      "choices": {
+        "A": "Bread rolls",
+        "B": "Bottle of ketchup",
+        "C": "Condiment packets",
+        "D": "Unopened cracker packages"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 28,
+      "q": "What factors influence the effectiveness of a sanitizer?",
+      "choices": {
+        "A": "Color, odor, packaging date, and brand",
+        "B": "Type of surface, lighting, air temperature, and humidity",
+        "C": "Storage temperature, expiration date, dilution method, and type",
+        "D": "Concentration, water temperature, contact time, water hardness, and pH"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 29,
+      "q": "An employee needed to clean and sanitize a prep table. They removed food from the surface, washed the surface with soapy water, rinsed the surface with clean water, sanitized the surface with a sanitizing solution, and dried the surface with a paper towel. What mistake did the employee make?",
+      "choices": {
+        "A": "They washed the surface with soapy water.",
+        "B": "They rinsed the surface with clean water.",
+        "C": "They dried the surface with a paper towel.",
+        "D": "They sanitized the surface with sanitizer solution."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 30,
+      "q": "What is the difference between a sanitizer and a disinfectant?",
+      "choices": {
+        "A": "A sanitizer is stronger.",
+        "B": "A sanitizer is best reserved for cleaning bodily fluid spills.",
+        "C": "A disinfectant reduces pathogens to safe levels.",
+        "D": "A disinfectant inactivates or eliminates pathogens."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 31,
+      "q": "Chemicals must be stored",
+      "choices": {
+        "A": "in their original containers.",
+        "B": "in a locked cabinet at all times.",
+        "C": "in a secure location when not in use.",
+        "D": "above food, equipment, utensils, and linens."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 32,
+      "q": "What must be done before starting a new construction or remodeling project in a food establishment?",
+      "choices": {
+        "A": "A zoning request must be obtained.",
+        "B": "A plan must be submitted to the regulatory authority.",
+        "C": "A preliminary inspection must be conducted by the fire department.",
+        "D": "A food safety audit must be conducted by the regulatory authority."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 33,
+      "q": "To be effective, a food safety management system relies on the establishment of food safety policies and procedures, employee training on them, and",
+      "choices": {
+        "A": "modeling to ensure employees remember them.",
+        "B": "monitoring to ensure employees are following them.",
+        "C": "auditing to ensure there are no food safety violations.",
+        "D": "verification to ensure the program is working as intended."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 34,
+      "q": "An employee drops a running hose into a mop bucket to fill it up. Why is this a bad practice?",
+      "choices": {
+        "A": "The employee has created backflow.",
+        "B": "The employee has created an air gap.",
+        "C": "The employee has created a backsiphonage.",
+        "D": "The employee has created a cross-connection."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 35,
+      "q": "Which situation is considered an imminent health hazard?",
+      "choices": {
+        "A": "A pest sighting near the back door of a facility",
+        "B": "A dishwasher leaking water onto a kitchen floor",
+        "C": "A sewage backup that contaminates food in dry storage",
+        "D": "A power failure that shuts off power to walk-in coolers for one hour"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 36,
+      "q": "Who should apply pesticides in an operation?",
+      "choices": {
+        "A": "The manager",
+        "B": "Janitorial staff",
+        "C": "A regulatory agency",
+        "D": "A pest control operator"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 37,
+      "q": "How should animals on the premises be handled?",
+      "choices": {
+        "A": "Do not intervene.",
+        "B": "Prevent them from entering.",
+        "C": "Allow all animals on the premises.",
+        "D": "Check with your local regulatory authority."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 38,
+      "q": "A shipment of oysters has arrived at an establishment. How long must the accompanying shellstock tags be kept on file?",
+      "choices": {
+        "A": "7 days",
+        "B": "30 days",
+        "C": "60 days",
+        "D": "90 days"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 39,
+      "q": "Sewage has backed up from one of the drains in an establishment. What should a manager do next?",
+      "choices": {
+        "A": "Call a plumber.",
+        "B": "Close the establishment.",
+        "C": "Call the regulatory authority.",
+        "D": "Determine if the hazard will affect food safety."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 40,
+      "q": "What should be done with a food item that has been recalled?",
+      "choices": {
+        "A": "FIFO the item.",
+        "B": "Discount the item.",
+        "C": "Use the item immediately.",
+        "D": "Remove the item from inventory and label it."
+      },
+      "answer": "D",
+      "explain": ""
+    }
+  ]
+}

@@ -2,19 +2,31 @@
   {
     "id": "1",
     "slug": "test",
-    "title": "Test 1",
+    "title": "2026 Diagnostic Test SSM9E",
     "published": true
   },
   {
     "id": "2",
-    "slug": "sample",
-    "title": "Sample Test",
-    "published": false
+    "slug": "practice",
+    "title": "2026 Practice Test",
+    "published": true
+  },
+  {
+    "id": "4",
+    "slug": "diagnostic",
+    "title": "2022 Diagnostic Test",
+    "published": true
   },
   {
     "id": "3",
     "slug": "foodcode",
-    "title": "2022 Food Code",
+    "title": "2022 Practice Test",
     "published": true
+  },
+  {
+    "id": "5",
+    "slug": "sample",
+    "title": "Sample Test",
+    "published": false
   }
 ]
