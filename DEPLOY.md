@@ -1,122 +1,27 @@
-# Deploy checklist
+# Running the practice test site
 
-Static site, GitHub Pages, at **practice.gofoodsafe.com**.
-Work through it in order.
+Static site on GitHub Pages, live at **https://practice.gofoodsafe.com**.
 
----
-
-### 1. Check the links are right
-
-Already done, but confirm before pushing. In `index.html` every link now points at
-`https://www.gofoodsafe.com` (navbar brand, Home, About, Contact, "Back to main site",
-and two in the footer).
-
-Check three things:
-
-- your site really is `www.gofoodsafe.com` and not the bare `gofoodsafe.com`
-- `/about` and `/contact` are the real page paths
-- the navbar link that says "Quizzes" — change it if your main menu calls it something else
-
-### 2. Run the checker
-
-```
-node check-questions.js
-```
-
-Must print **All good. Safe to publish.** Fix anything it lists before going on.
-
-### 3. Commit everything
-
-```
-git add -A
-git commit -m "Quiz site"
-```
-
-### 4. Create the repo on GitHub
-
-New repository, no README, no .gitignore, no licence.
-
-### 5. Push
-
-Use the commands GitHub shows you on the new empty repo page:
-
-```
-git remote add origin https://github.com/USERNAME/REPO.git
-git branch -M main
-git push -u origin main
-```
-
-### 6. Turn on Pages
-
-Repo → **Settings** → **Pages**
-
-- Source: **Deploy from a branch**
-- Branch: **main**, folder: **/ (root)**
-- Save
-
-Wait a minute, then confirm the site loads at `https://USERNAME.github.io/REPO/`.
-
-### 7. Add the DNS record at GoDaddy
-
-Domain → **DNS** → **Add record**
-
-- Type: **CNAME**
-- Name: `practice`
-- Value: `USERNAME.github.io`
-- TTL: default
-
-Save.
-
-### 8. Set the custom domain on GitHub
-
-Repo → **Settings** → **Pages** → **Custom domain**
-
-Enter `practice.gofoodsafe.com`, click Save.
-
-GitHub runs a DNS check. It may say "not yet propagated" for a while — that is normal, check back later.
-
-### 9. Enforce HTTPS
-
-Same page. Once the DNS check passes, the **Enforce HTTPS** tickbox becomes available. Tick it.
-
-The certificate can take up to an hour. If the box is greyed out, come back later.
-
-### 10. Pull the CNAME file
-
-GitHub added a `CNAME` file to the repo in step 8. Get it locally, or your next push will remove your custom domain:
-
-```
-git pull
-```
-
-### 11. Test the live site
-
-Open `https://practice.gofoodsafe.com` and check:
-
-- the padlock shows (HTTPS working)
-- the test grid loads
-- take one test start to finish
-- refresh the page — the green "done" tint on that test is still there
-- open it on a phone
-
-### 12. Link to it from your main site
-
-Add a menu link on the GoDaddy site pointing to `https://practice.gofoodsafe.com`.
+Pushing to `main` **is** deploying. There is no staging — whatever you push is what
+students see about a minute later.
 
 ---
 
-## Adding a test later
+## Adding a test
 
-1. Create `data/<slug>_<id>.json` with `id`, `slug`, `name`, `questions`:
+### 1. Create the test file
+
+The filename is **`slug` + `_` + `id` + `.json`**, in `data/`. So slug `foodcode`
+and id `3` means `data/foodcode_3.json`.
 
 ```json
 {
-  "id": "2",
-  "slug": "test",
-  "name": "Test 2",
+  "id": "3",
+  "slug": "foodcode",
+  "name": "2022 Practice Test",
   "questions": [
     {
-      "id": 201,
+      "id": 1,
       "q": "Question text?",
       "choices": {
         "A": "First choice",
@@ -131,11 +36,120 @@ Add a menu link on the GoDaddy site pointing to `https://practice.gofoodsafe.com
 }
 ```
 
-Choice keys must run A, B, C, D. `answer` is one of those letters.
-`explain` may be an empty string. Question ids must be unique across every test.
+Rules the checker enforces:
 
-2. Add `{ "id": "...", "slug": "...", "title": "..." }` to `data/catalog.json`
-3. `node check-questions.js`
-4. `git add -A && git commit -m "Add <name> test" && git push`
+- **`id` and `slug` must match the catalog entry**, and both are strings — `"3"`, not `3`.
+- **`slug` must be unique** across tests, even though the filename also includes the id.
+- **Question ids must be unique within this test only.** Every test can start at 1.
+  They must exist, though — saved progress is keyed by them, which is what lets you
+  edit a test later without shifting a student's answers onto the wrong questions.
+- **Choice keys run A, B, C, D** — consecutive letters starting at A. `answer` is one
+  of those letters.
+- **`explain` may be `""`.** It is only shown once the student answers correctly, so a
+  wrong answer never gives the answer away.
 
-Live in about a minute.
+### 2. Add it to the catalog
+
+`data/catalog.json`, an array. **Cards appear in array order**, so position matters —
+students start with the first one.
+
+```json
+{
+  "id": "3",
+  "slug": "foodcode",
+  "title": "2022 Practice Test",
+  "published": true
+}
+```
+
+`title` is what shows on the card. It can differ from the test file's `name`, but
+keeping them the same avoids confusion on the results screen.
+
+`published: false` keeps a test in the repo but off the site. Only an explicit `false`
+hides it — a missing key still shows.
+
+### 3. Check it
+
+```
+node check-questions.js
+```
+
+Must end with **All good. Safe to publish.** It also reports:
+
+- `[hidden]` beside any test with `"published": false`, and a summary line naming them —
+  so a test left hidden by accident cannot pass silently
+- questions with no `explain`, which is allowed and only informational
+
+### 4. Ship it
+
+```
+git add -A
+git commit -m "Add <name> test"
+git push
+```
+
+Live in about a minute. Then open the site and take the new test start to finish.
+
+---
+
+## Editing a test that is already live
+
+**Safe any time** — nothing stored depends on these:
+
+- `title` in the catalog, and `name` in the test file
+- `published`
+- catalog array order
+- question text, choices, `answer`, `explain`
+
+**Changes a student's saved progress, silently:**
+
+- **Changing a question's `id`.** Answers are stored per question id, so a renumbered
+  question reads as deleted and that answer is dropped.
+- **Changing a test's `id`.** This is the big one. The id is a storage key, not a label:
+
+  ```js
+  all[testId] = { answers: ..., current: ... }   // half-finished runs
+  done[testId]                                    // the green "done" tint
+  ```
+
+  Change it and every student's progress for that test orphans. Nothing errors.
+
+  A test id can only move together with its filename and its own `id` field —
+  **three edits**, or the checker fails:
+
+  1. rename `data/<slug>_<old>.json` to `data/<slug>_<new>.json`
+  2. change `"id"` inside that file
+  3. change `"id"` in the catalog entry
+
+Progress lives in `localStorage` under `quizzes-done` and `quizzes-progress`, per
+browser. The **Reset** button on the start screen clears both.
+
+---
+
+## How this is wired up
+
+Recorded in case it ever needs changing. None of it is part of a normal day.
+
+| | |
+|---|---|
+| Repo | `ignacio-gomez/gofoodsafe-quizzes`, public (Pages needs public on the free plan) |
+| Pages source | Deploy from a branch — `main`, folder `/` |
+| Custom domain | `practice.gofoodsafe.com`, Enforce HTTPS on |
+| DNS | GoDaddy CNAME, name `practice`, value `ignacio-gomez.github.io` |
+| Certificate | Auto-provisioned by GitHub, renews itself |
+
+The **`CNAME` file in the repo root is load-bearing** — GitHub wrote it when the custom
+domain was set, and deleting it drops the domain.
+
+The main site `gofoodsafe.com` is a GoDaddy one-pager on the **bare** domain; `www`
+redirects to it. Links out of this site should use `https://gofoodsafe.com` — there is
+no `/about` or `/contact` to link to.
+
+### If the site goes down
+
+- **404 everywhere** — check the repo is still public, and that `CNAME` is still in the
+  repo root.
+- **Certificate warning** — usually a certificate mid-renewal, or a change to the custom
+  domain. Wait, then hard-refresh; a browser caches the failed handshake.
+- **A test won't open** — the catalog and the filename have drifted apart.
+  `node check-questions.js` names the mismatch.
