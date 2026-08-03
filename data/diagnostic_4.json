@@ -1,0 +1,967 @@
+{
+  "id": "4",
+  "slug": "diagnostic",
+  "name": "2022 Diagnostic Test",
+  "questions": [
+    {
+      "id": 1,
+      "q": "The purpose of a food safety management system is to",
+      "choices": {
+        "A": "keep all areas of the facility clean and pest-free.",
+        "B": "identify, tag, and repair faulty equipment within the facility.",
+        "C": "prevent foodborne illness by controlling risks and hazards.",
+        "D": "use the correct methods for purchasing and receiving food."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 2,
+      "q": "A manager's responsibility to actively control risk factors for foodborne illnesses is called",
+      "choices": {
+        "A": "hazard analysis critical control point (HACCP).",
+        "B": "quality control and assurance.",
+        "C": "food safety management.",
+        "D": "active managerial control."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 3,
+      "q": "A manager asks a chef to continue cooking chicken breasts after seeing them cooked to an incorrect temperature. This is an example of which step in active managerial control?",
+      "choices": {
+        "A": "Identifying risks",
+        "B": "Monitoring",
+        "C": "Corrective action",
+        "D": "Re-evaluation"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 4,
+      "q": "A manager walks around the kitchen every hour to verify policies, procedures, and corrective actions are followed. This is an example of which step in active managerial control?",
+      "choices": {
+        "A": "Management oversight",
+        "B": "Corrective action",
+        "C": "Re-evaluation",
+        "D": "Identify risks"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 5,
+      "q": "One way for managers to show that they know how to keep food safe is to",
+      "choices": {
+        "A": "become certified in food safety.",
+        "B": "take cooking temperatures.",
+        "C": "monitor employee behaviors.",
+        "D": "conduct self-inspections."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 6,
+      "q": "A power outage has left hot TCS food out of temperature control for six hours. What must be done with the food?",
+      "choices": {
+        "A": "Cool the food to 41°F (5°C) or lower.",
+        "B": "Serve the food immediately.",
+        "C": "Cook the food 165°F (74°C).",
+        "D": "Throw the food away."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 7,
+      "q": "Sewage backs up in a food storage area and there is a significant risk of contamination to the food stored there. What should be done?",
+      "choices": {
+        "A": "Execute a HACCP plan.",
+        "B": "Reduce the hours of operation.",
+        "C": "Stop service and notify the regulatory authority.",
+        "D": "Continue service, but notify the regulatory authority."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 8,
+      "q": "What is the best way to protect food from deliberate tampering?",
+      "choices": {
+        "A": "Make it as difficult as possible for someone to tamper with it.",
+        "B": "Allow former employees into the operation.",
+        "C": "Perform spot inspections on new vendors.",
+        "D": "Use the USDA A.L.A.R.M. system."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 9,
+      "q": "To prevent the deliberate contamination of food, a manager should know whom to contact about suspicious activity, monitor the security of products, keep food defense information accessible, and know",
+      "choices": {
+        "A": "when to register with the EPA.",
+        "B": "how to fill out an incident report.",
+        "C": "where to find Safety Data Sheets in the operation.",
+        "D": "who is in the facility."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 10,
+      "q": "Where should food handlers wash their hands?",
+      "choices": {
+        "A": "Prep sink",
+        "B": "Utility sink",
+        "C": "Designated sink for handwashing",
+        "D": "Three-compartment sink"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 11,
+      "q": "What must food handlers do after touching their body or clothing?",
+      "choices": {
+        "A": "Wash their hands",
+        "B": "Rinse their gloves",
+        "C": "Change their aprons",
+        "D": "Use a hand antiseptic"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 12,
+      "q": "When washing hands, what is the minimum time that food handlers should scrub hands and arms with soap?",
+      "choices": {
+        "A": "5 seconds",
+        "B": "8 seconds",
+        "C": "10 seconds",
+        "D": "18 seconds"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 13,
+      "q": "After which activity must food handlers wash their hands?",
+      "choices": {
+        "A": "Handling soiled items",
+        "B": "Putting on gloves",
+        "C": "Serving customers",
+        "D": "Applying hand antiseptic"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 14,
+      "q": "The main reason food handlers should not scratch their scalp is to avoid",
+      "choices": {
+        "A": "transferring an allergen to food.",
+        "B": "spreading pathogens to food.",
+        "C": "causing an infected wound.",
+        "D": "causing toxic metal poisoning."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 15,
+      "q": "What must a food handler with facial hair do to prevent food contamination?",
+      "choices": {
+        "A": "Wear a beard restraint",
+        "B": "Wash the beard twice daily",
+        "C": "Keep the beard trimmed to 1\" (2.5 cm) or less",
+        "D": "Treat it with beard conditioner"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 16,
+      "q": "What should a food handler do when working with an infected cut on the finger?",
+      "choices": {
+        "A": "Cover the wound with a bandage.",
+        "B": "Stay away from food and prep areas.",
+        "C": "Cover the hand with a glove or a finger cot.",
+        "D": "Cover the wound with an impermeable bandage or finger cot and a glove."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 17,
+      "q": "What is the only jewelry that may be worn on the hands or arms while handling food?",
+      "choices": {
+        "A": "Plain-band ring",
+        "B": "Medical ID bracelet",
+        "C": "Leather-band watch",
+        "D": "Diamond ring"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 18,
+      "q": "In addition to other criteria, how many people must have the same symptoms in order for a foodborne illness to be considered an outbreak?",
+      "choices": {
+        "A": "At least 1",
+        "B": "At least 2",
+        "C": "At least 10",
+        "D": "At least 20"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 19,
+      "q": "When should a food handler with a sore throat and fever be excluded from the operation?",
+      "choices": {
+        "A": "Customers served are primarily a high-risk population",
+        "B": "Fever is over 100°F (38°C)",
+        "C": "Sore throat has lasted for more than 5 days",
+        "D": "Before the regulatory authority is notified"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 20,
+      "q": "What is a basic characteristic of a virus?",
+      "choices": {
+        "A": "It can be smelled and tasted",
+        "B": "Grows in food",
+        "C": "Requires a living host to grow",
+        "D": "Commonly found in cattle intestines"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 21,
+      "q": "After handling raw meat and before handling produce, what should food handlers do with their gloves?",
+      "choices": {
+        "A": "Clean and sanitize them.",
+        "B": "Continue working with them.",
+        "C": "Set them aside if working with meat again later.",
+        "D": "Wash hands and change them."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 22,
+      "q": "Where should personal items, like a coat, be stored in the operation?",
+      "choices": {
+        "A": "On a shelf, above food",
+        "B": "On a shelf, below food",
+        "C": "In a designated area",
+        "D": "In a kitchen, away from moving equipment"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 23,
+      "q": "What should food handlers do after prepping food and before using the restroom?",
+      "choices": {
+        "A": "Wash their hands",
+        "B": "Take off their hats",
+        "C": "Change their gloves",
+        "D": "Take off their aprons"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 24,
+      "q": "How should the temperature of a shipment of sour cream be taken when it arrives at an operation?",
+      "choices": {
+        "A": "Place a hand on a container to see if it is cool to the touch.",
+        "B": "Hold an infrared thermometer as close as possible to a case.",
+        "C": "Place the thermometer stem between shipping boxes for a reading.",
+        "D": "Remove the lid of a container and put the thermometer stem into the sour cream."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 25,
+      "q": "Ice crystals on a frozen food item indicate",
+      "choices": {
+        "A": "time-temperature abuse.",
+        "B": "cross-contamination.",
+        "C": "poor cleaning and sanitizing.",
+        "D": "poor personal hygiene."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 26,
+      "q": "What is the most important factor in choosing an approved food supplier?",
+      "choices": {
+        "A": "It has a HACCP program or other food safety system.",
+        "B": "It has documented manufacturing and packing practices.",
+        "C": "Its warehouse is close to the operation, reducing shipping time.",
+        "D": "It has been inspected and complies with local, state, and federal laws."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 27,
+      "q": "Which item should be rejected?",
+      "choices": {
+        "A": "Bags of organic cookies in torn packaging",
+        "B": "Bottled milk at 41°F (5°C)",
+        "C": "Single-use cups in original packing",
+        "D": "Live oysters with an internal temperature of 50°F (10°C)"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 28,
+      "q": "Supplies should be stored away from the walls and at least _____ off of the floor.",
+      "choices": {
+        "A": "2 inches (5 centimeters)",
+        "B": "4 inches (10 centimeters)",
+        "C": "5 inches (13 centimeters)",
+        "D": "6 inches (15 centimeters)"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 29,
+      "q": "Soup that is being hot-held on a buffet should be labeled with the",
+      "choices": {
+        "A": "name of the food.",
+        "B": "prep date.",
+        "C": "soup's ingredients.",
+        "D": "use-by date."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 30,
+      "q": "How should chemicals be stored?",
+      "choices": {
+        "A": "Above food",
+        "B": "Separate from food",
+        "C": "In food storage areas",
+        "D": "With kitchenware"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 31,
+      "q": "What should be done to ready-to-eat TCS food that will be prepped on-site and held for longer than 24 hours?",
+      "choices": {
+        "A": "Date mark it.",
+        "B": "Sell it.",
+        "C": "Throw it away.",
+        "D": "Serve it within the next hour."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 32,
+      "q": "What must a manager do with a recalled food item in the operation?",
+      "choices": {
+        "A": "Combine the item with non-recalled items during preparation.",
+        "B": "Record the names of customers who purchase the item.",
+        "C": "Store the recalled item separately from other food.",
+        "D": "Sell all recalled items within 24 hours."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 33,
+      "q": "A recall has been issued for a specific brand of orange juice. The store manager has matched the information from the recall notice to the item, removed the item from inventory, and stored it in a secure location. What should the manager do next?",
+      "choices": {
+        "A": "Refer to the vendor notification for next steps.",
+        "B": "Contact the supplier and arrange for the product to be picked up.",
+        "C": "Label the item to prevent it from accidently being placed back in inventory.",
+        "D": "Inform the local media, customers, and employees of the reason for the recall."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 34,
+      "q": "A food item that is received with an expired use-by date should be",
+      "choices": {
+        "A": "rejected.",
+        "B": "used immediately.",
+        "C": "accepted but labeled differently.",
+        "D": "accepted but kept separate from other items."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 35,
+      "q": "With approved procedures in place, cold food can be held intentionally without temperature control for _____ hours as long as it does not exceed 70°F (21°C).",
+      "choices": {
+        "A": "2",
+        "B": "4",
+        "C": "6",
+        "D": "8"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 36,
+      "q": "When delivering food for off-site service, raw poultry must be stored",
+      "choices": {
+        "A": "at a lower temperature than ready-to-eat food.",
+        "B": "separately from ready-to-eat food.",
+        "C": "without temperature control.",
+        "D": "above raw beef."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 37,
+      "q": "What is the minimum internal cooking temperature for seafood?",
+      "choices": {
+        "A": "135°F (57°C)",
+        "B": "145°F (63°C) for 15 seconds",
+        "C": "155°F (68°C) for 17 seconds",
+        "D": "165°F (74°C) for <1 second"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 38,
+      "q": "Food must be cooled from 135°F to 70°F (57°C to 21°C) within _____ hours and then from 70°F to 41°F (21°C to 5°C) or lower in the next _____ hours.",
+      "choices": {
+        "A": "2, 4",
+        "B": "4, 2",
+        "C": "3, 5",
+        "D": "5, 3"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 39,
+      "q": "Hot TCS food being hot-held for service must be at what temperature?",
+      "choices": {
+        "A": "70°F (21°C) or above",
+        "B": "125°F (52°C) or above",
+        "C": "135°F (57°C) or above",
+        "D": "155°F (68°C) or above"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 40,
+      "q": "Which method is a safe way to thaw food?",
+      "choices": {
+        "A": "As part of the cooking process",
+        "B": "Under running water at 125°F (52°C) or higher",
+        "C": "Submerged in a sink of standing water at 70°F (21°C)",
+        "D": "On the counter at room temperature"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 41,
+      "q": "Food being cooled must pass quickly through which temperature range to reduce pathogen growth?",
+      "choices": {
+        "A": "65°F to 20°F (18°C to -6°C)",
+        "B": "125°F to 70°F (52°C to 21°C)",
+        "C": "180°F to 130°F (82°C to 54°C)",
+        "D": "220°F to 195°F (104°C to 90°C)"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 42,
+      "q": "What food item would the FDA advise against offering on a children's menu?",
+      "choices": {
+        "A": "Rare cheeseburgers",
+        "B": "Cheese pizza",
+        "C": "Peanut butter and jelly sandwiches",
+        "D": "Fried shrimp"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 43,
+      "q": "What should a manager do with a food handler who has diarrhea?",
+      "choices": {
+        "A": "Restrict them from working with food",
+        "B": "Restrict them from handling equipment",
+        "C": "Exclude them from the operation",
+        "D": "Exclude them from handling food"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 44,
+      "q": "Which can lead to chemical contamination?",
+      "choices": {
+        "A": "Bones in a chicken fillet",
+        "B": "Norovirus in shellfish",
+        "C": "Metal shavings in a can of peaches",
+        "D": "Tomato juice served in a pewter pitcher"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 45,
+      "q": "Which is a biological contaminant?",
+      "choices": {
+        "A": "Bones in a chicken fillet",
+        "B": "Norovirus in shellfish",
+        "C": "Metal shavings in a can of peaches",
+        "D": "Tomato juice served in a pewter pitcher"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 46,
+      "q": "The 6 conditions bacteria need to grow are food, acidity, temperature, time, oxygen, and",
+      "choices": {
+        "A": "meat.",
+        "B": "moisture.",
+        "C": "melatonin.",
+        "D": "management."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 47,
+      "q": "Using the same knife to chop carrots for a salad immediately after cutting up raw chicken is an example of",
+      "choices": {
+        "A": "time-temperature abuse.",
+        "B": "cross-contamination.",
+        "C": "poor personal hygiene.",
+        "D": "purchasing from an unapproved supplier."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 48,
+      "q": "Which is an example of physical contamination?",
+      "choices": {
+        "A": "Sneezing on food",
+        "B": "Touching dirty food-contact surfaces",
+        "C": "Bones in fish",
+        "D": "Cooking tomato sauce in a copper pan"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 49,
+      "q": "Which symptom could mean a customer is having an allergic reaction to food?",
+      "choices": {
+        "A": "Coughing",
+        "B": "Dehydration",
+        "C": "Swollen tongue",
+        "D": "Sneezing"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 50,
+      "q": "To prevent food allergens from being transferred to food,",
+      "choices": {
+        "A": "clean and sanitize utensils before preparing an allergen special order.",
+        "B": "buy food from trusted suppliers.",
+        "C": "store cold food at 41°F (5°C) or lower.",
+        "D": "avoid pewter tableware and utensils and copper cookware."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 51,
+      "q": "Which is a Big Nine food allergen?",
+      "choices": {
+        "A": "Broccoli",
+        "B": "Sesame",
+        "C": "Grapes",
+        "D": "Pork"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 52,
+      "q": "What is the minimum temperature that must be maintained when holding hot chicken soup for service?",
+      "choices": {
+        "A": "100°F (38°C)",
+        "B": "120°F (49°C)",
+        "C": "135°F (57°C)",
+        "D": "155°F (68°C)"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 53,
+      "q": "With approved procedures in place, cold food being held without temperature control for up to six hours cannot exceed which temperature while it is being served?",
+      "choices": {
+        "A": "41°F (5°C)",
+        "B": "50°F (10°C)",
+        "C": "60°F (16°C)",
+        "D": "70°F (21°C)"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 54,
+      "q": "A food handler has been holding chicken salad for sandwiches in a cold well for five hours. When she checks the temperature of the chicken salad, it is 54°F (12°C). What must the food handler do?",
+      "choices": {
+        "A": "Sell the remaining chicken salad immediately",
+        "B": "Sell the remaining chicken salad within 2 hours",
+        "C": "Cool the chicken salad to 41°F (5°C)",
+        "D": "Discard the chicken salad"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 55,
+      "q": "Meat cooked in a microwave oven must reach an internal temperature of",
+      "choices": {
+        "A": "135°F (57°C)",
+        "B": "145°F (63°C)",
+        "C": "155°F (68°C)",
+        "D": "165°F (74°C)"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 56,
+      "q": "An operation has a buffet with 8 different items on it. How many serving utensils are needed to serve the items on the buffet?",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "4",
+        "D": "8"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 57,
+      "q": "Which food item may be handled with bare hands?",
+      "choices": {
+        "A": "Sliced cheese for sandwiches",
+        "B": "Boiled egg slices for salad",
+        "C": "Chopped carrots for stew",
+        "D": "Parsley for garnish"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 58,
+      "q": "A cook wore single-use gloves while forming raw ground beef into patties. The cook continued to wear them while slicing hamburger buns. What mistake was made?",
+      "choices": {
+        "A": "The cook did not wear reusable gloves while handling the raw ground beef and hamburger buns.",
+        "B": "The cook did not clean and sanitize the gloves before handling the hamburger buns.",
+        "C": "The cook did not wash hands before putting on the same gloves to slice the hamburger buns.",
+        "D": "The cook did not wash hands and put on new gloves before slicing the hamburger buns."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 59,
+      "q": "When must a consumer advisory be provided for menu items containing TCS food?",
+      "choices": {
+        "A": "When the item is raw or undercooked.",
+        "B": "When the item contains a potential allergen.",
+        "C": "When the operation provides only counter service.",
+        "D": "When the operation primarily serves a high-risk population."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 60,
+      "q": "TCS food that will be reheated for hot holding must reach a temperature of at least",
+      "choices": {
+        "A": "135°F (57°C) for 15 seconds within two hours",
+        "B": "145°F (63°C) for 15 seconds within two hours",
+        "C": "155°F (68°C) for 15 seconds within two hours",
+        "D": "165°F (74°C) for 15 seconds within two hours"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 61,
+      "q": "What is the correct way to store mops in between uses?",
+      "choices": {
+        "A": "Propped in a corner",
+        "B": "In a clean bucket",
+        "C": "In a utility sink",
+        "D": "Hanging on a hook"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 62,
+      "q": "A buser poured some cleaner from its original container into a smaller working container. What else does the buser need to do?",
+      "choices": {
+        "A": "Label the working container with the chemical's common name.",
+        "B": "Read the safety data sheet (SDS) for the cleaner.",
+        "C": "Use a new wiping cloth when first using the working container.",
+        "D": "Note on the original container that some cleaner was put into a working container."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 63,
+      "q": "Which does not require sanitizing?",
+      "choices": {
+        "A": "Plates",
+        "B": "Knives",
+        "C": "Walls",
+        "D": "Tongs"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 64,
+      "q": "Which surfaces must be both cleaned and sanitized?",
+      "choices": {
+        "A": "Walls",
+        "B": "Cutting boards",
+        "C": "Storage shelves",
+        "D": "Garbage containers"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 65,
+      "q": "The first step in cleaning and sanitizing items in a three-compartment sink is",
+      "choices": {
+        "A": "air-drying items.",
+        "B": "washing items in detergent.",
+        "C": "immersing items in sanitizer.",
+        "D": "rinsing, scraping, or soaking items."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 66,
+      "q": "After scraping and washing, what is the third step in cleaning and sanitizing a prep table?",
+      "choices": {
+        "A": "Sanitizing",
+        "B": "Air-drying",
+        "C": "Rinsing",
+        "D": "Rewashing"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 67,
+      "q": "In a heat-sanitizing dishwasher, what is the minimum temperature for the final rinse?",
+      "choices": {
+        "A": "152°F (67°C)",
+        "B": "180°F (82°C)",
+        "C": "192°F (89°C)",
+        "D": "200°F (93°C)"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 68,
+      "q": "A food-contact surface must be cleaned and sanitized",
+      "choices": {
+        "A": "before working with a different type of food.",
+        "B": "every 6 hours.",
+        "C": "only if the food handler changes gloves.",
+        "D": "at the end of the food handler's shift."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 69,
+      "q": "Where should garbage cans be cleaned?",
+      "choices": {
+        "A": "Away from prep areas",
+        "B": "Next to prep areas",
+        "C": "In dishwashing areas",
+        "D": "In food storage areas"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 70,
+      "q": "When the kitchen garbage can was full, an employee placed the full garbage bag on a prep table and tied it securely. Then he carried it to the Dumpster and disposed of it. What was done incorrectly?",
+      "choices": {
+        "A": "The employee waited until the garbage was full.",
+        "B": "The bag was disposed of in a dumpster.",
+        "C": "The bag was placed on a prep table.",
+        "D": "The employee tied the bag shut."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 71,
+      "q": "Grease and condensation buildup on surfaces can be avoided with correct",
+      "choices": {
+        "A": "garbage disposal.",
+        "B": "lighting.",
+        "C": "sanitizing.",
+        "D": "ventilation."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 72,
+      "q": "To prevent backflow, a sink must be equipped with a(n)",
+      "choices": {
+        "A": "Air gap",
+        "B": "Vacuum assist",
+        "C": "Overflow drain",
+        "D": "P-trap"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 73,
+      "q": "What are the most important food safety features to look for when selecting flooring, wall, and ceiling materials?",
+      "choices": {
+        "A": "Absorbent and durable",
+        "B": "Hard and durable",
+        "C": "Porous and durable",
+        "D": "Smooth and durable"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 74,
+      "q": "What information must a master cleaning schedule contain?",
+      "choices": {
+        "A": "What should be cleaned and when",
+        "B": "What should be cleaned, when, and by whom",
+        "C": "What should be cleaned, when, by whom, and how",
+        "D": "What should be cleaned, when, by whom, how, and why"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 75,
+      "q": "A handwashing station should have running water supplied at a temperature of at least",
+      "choices": {
+        "A": "70°F (21°C)",
+        "B": "75°F (24°C)",
+        "C": "80°F (27°C)",
+        "D": "85°F (29°C)"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 76,
+      "q": "A food handler drops the end of a hose into a mop bucket and turns the water on to fill it. What has the food handler done wrong?",
+      "choices": {
+        "A": "Created a cross-connection",
+        "B": "Created an air-gap",
+        "C": "Prevented backflow",
+        "D": "Prevented atmospheric vacuuming"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 77,
+      "q": "Which piece of equipment does not meet the appropriate standards for contact with food?",
+      "choices": {
+        "A": "Spatula with an NSF mark",
+        "B": "Water glass with a CSA Star mark",
+        "C": "Cutting board with a UL EPH classified mark",
+        "D": "Dinner plate with an ETL Sanitation mark"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 78,
+      "q": "Which individual should apply pesticides in a foodservice operation?",
+      "choices": {
+        "A": "A pest control operator",
+        "B": "A shift manager",
+        "C": "A busboy",
+        "D": "A cook"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 79,
+      "q": "A food handler who is receiving a food delivery observes signs of pests in the food. What should be done?",
+      "choices": {
+        "A": "The head chef should be warned of the pests.",
+        "B": "The food handler should remove all evidence of the pests.",
+        "C": "The shipment should be refused and prevented from entering the operation.",
+        "D": "The shipment should be stored outside the kitchen until a manager inspects it."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 80,
+      "q": "How high must legs be on table-mounted equipment?",
+      "choices": {
+        "A": "At least 1 inch (3 centimeters)",
+        "B": "At least 2 inches (5 centimeters)",
+        "C": "At least 4 inches (10 centimeters)",
+        "D": "At least 6 inches (15 centimeters)"
+      },
+      "answer": "C",
+      "explain": ""
+    }
+  ]
+}
