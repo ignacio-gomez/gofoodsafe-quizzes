@@ -16,11 +16,37 @@
   <!-- =====================================================================
      HEADER  -  make this match your GoDaddy site
      ===================================================================== -->
-  <nav class="site-nav sticky-top">
-    <ul class="site-nav-list">
-      <li><a href="https://gofoodsafe.com">Home</a></li>
-      <li><a class="is-active" aria-current="page" href="./">Practice Tests</a></li>
-    </ul>
+  <!-- Bootstrap's offcanvas navbar: a hamburger and a sliding panel below
+       768px, the same centred row as before at and above it. data-bs-theme
+       makes the toggler icon and close button render light on the dark bar. -->
+  <nav class="navbar navbar-expand-md site-nav sticky-top" data-bs-theme="dark">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler border-0 shadow-none" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#siteMenu"
+        aria-controls="siteMenu" aria-label="Open menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-start site-menu" tabindex="-1" id="siteMenu"
+        aria-labelledby="siteMenuLabel">
+
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title visually-hidden" id="siteMenuLabel">Menu</h2>
+          <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"
+            aria-label="Close menu"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="site-nav-list navbar-nav">
+            <li><a href="https://gofoodsafe.com">Home</a></li>
+            <li><a class="is-active" aria-current="page" href="./">Practice Tests</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
   </nav>
 
 
