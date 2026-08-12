@@ -179,6 +179,23 @@
   text-align: left;
 }
 
+/* Language heading inside the grid. Spans every column so the cards after it
+   start on a fresh row - without that it would be laid out as a cell and sit
+   beside a test rather than above the group. */
+.quiz-grid-head {
+  grid-column: 1 / -1;
+  margin: .75rem 0 0;
+  font-size: .8125rem;
+  font-weight: 600;
+  color: var(--bs-secondary-color);
+}
+
+/* Never true today - the English group comes first - but stops a stray gap
+   above the grid if the catalog is ever reordered to lead with a language. */
+.quiz-grid-head:first-child {
+  margin-top: 0;
+}
+
 /* The arrow is the only thing on the card that says "this opens something",
    so it carries more weight than the label. line-height:1 keeps it from
    stretching the button now that it is larger than the text beside it. */

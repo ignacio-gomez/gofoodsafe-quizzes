@@ -1,0 +1,967 @@
+{
+  "id": "6",
+  "slug": "diagnostico",
+  "name": "2026 Prueba de Diagnóstico",
+  "questions": [
+    {
+      "id": 1,
+      "q": "¿Qué es cierto acerca de las autoinspecciones?",
+      "choices": {
+        "A": "Deben realizarse anualmente.",
+        "B": "Pueden realizarse en lugar de la inspección regulatoria.",
+        "C": "Deben ser un reflejo de las inspecciones realizadas por la autoridad reguladora.",
+        "D": "Son innecesarias si el establecimiento tiene inspecciones regulatorias."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 2,
+      "q": "¿Qué se debe buscar al realizar una autoinspección?",
+      "choices": {
+        "A": "Cómo se maneja la gestión de crisis.",
+        "B": "Cómo se lleva a cabo la orientación para los nuevos empleados.",
+        "C": "Cómo se registran las quejas de los clientes.",
+        "D": "Cómo se negocian los contratos de control de plagas."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 3,
+      "q": "¿Qué se necesita para operar un establecimiento de servicio de alimentos?",
+      "choices": {
+        "A": "Un programa HACCP.",
+        "B": "Un permiso para operar.",
+        "C": "Un plan de gestión de crisis.",
+        "D": "Un permiso (variance) de la autoridad reguladora."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 4,
+      "q": "¿Qué se debe hacer antes de iniciar cualquier proyecto nuevo de construcción o remodelación?",
+      "choices": {
+        "A": "Se debe contratar a un plomero con licencia.",
+        "B": "Se debe contactar a un operador de control de plagas (PCO, por sus siglas en inglés).",
+        "C": "Se debe presentar un plan a la autoridad reguladora.",
+        "D": "Se debe contratar a una compañía de limpieza para que haga una limpieza profunda de las instalaciones."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 5,
+      "q": "¿Qué es fundamental para crear una cultura de seguridad de los alimentos sólida?",
+      "choices": {
+        "A": "Asignar un único punto de contacto para gestionar la seguridad de los alimentos.",
+        "B": "Confiar en las políticas escritas en lugar del entrenamiento continuo.",
+        "C": "Usar listas de verificación como principal método de rendición de cuentas.",
+        "D": "Modelar los comportamientos deseados que se esperan de los empleados."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 6,
+      "q": "¿Qué comportamiento contribuye a una cultura de seguridad de los alimentos sólida?",
+      "choices": {
+        "A": "Un gerente distribuye termómetros nuevos a los empleados antes de una inspección.",
+        "B": "Un manipulador de alimentos se lava las manos porque sabe que puede enfermar a la gente si no lo hace.",
+        "C": "Un manipulador de alimentos confía en que la gerencia monitoreará la seguridad de los alimentos.",
+        "D": "Un miembro del equipo sigue las reglas de seguridad de los alimentos para evitar una amonestación por escrito."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 7,
+      "q": "¿Cuándo se requiere un plan HACCP?",
+      "choices": {
+        "A": "En la mayoría de los casos, no se requiere.",
+        "B": "Cuando un establecimiento sirve principalmente carne poco cocida.",
+        "C": "Cuando un establecimiento ahúma alimentos para mejorar el sabor.",
+        "D": "Cuando un establecimiento enfría los alimentos usando el método de enfriamiento de dos etapas."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 8,
+      "q": "¿Cuál es un punto crítico de control (CCP, por sus siglas en inglés)?",
+      "choices": {
+        "A": "Cocinar pollo a 165°F (74°C) durante menos de 1 segundo",
+        "B": "Comprar pollo con una clasificación del USDA.",
+        "C": "Preparar el pollo en una tabla de cortar amarilla.",
+        "D": "Etiquetar un guisado de pollo en un buffet con información sobre alérgenos."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 9,
+      "q": "Un cliente trae un recipiente \"para llevar\" al restaurante para que se lo rellenen con alimentos. Se ve limpio, pero no se lo rellenan. ¿Hace bien el restaurante en negarse?",
+      "choices": {
+        "A": "Sí, porque el recipiente es de un solo uso y no está diseñado para rellenarse.",
+        "B": "Sí, porque es posible que el recipiente no se haya limpiado y sanitizado adecuadamente.",
+        "C": "No, porque el recipiente se fabricó para contener alimentos.",
+        "D": "No, porque el recipiente se puede rellenar con alimentos si es para consumo personal."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 10,
+      "q": "¿Qué pueden hacer los empleados para reducir el riesgo de contaminación intencional?",
+      "choices": {
+        "A": "Asegurar todos los ingredientes y suministros.",
+        "B": "Verificar la temperatura interna de los alimentos.",
+        "C": "Desechar los alimentos si hubo contacto cruzado.",
+        "D": "Usar desinfectantes en las superficies en lugar de sanitizantes."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 11,
+      "q": "Un gerente puede asegurarse de que los empleados siguen su entrenamiento al:",
+      "choices": {
+        "A": "monitorearlos.",
+        "B": "hacer que completen una evaluación escrita.",
+        "C": "preguntarles si pueden hacer las tareas para las que fueron entrenados.",
+        "D": "revisar el informe de inspección regulatoria más reciente."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 12,
+      "q": "¿Cuándo se debe entrenar a los empleados?",
+      "choices": {
+        "A": "Después de que cometieron una infracción.",
+        "B": "No hasta que realmente necesiten el entrenamiento.",
+        "C": "Después de evaluar formalmente sus conocimientos.",
+        "D": "Al ser contratados por primera vez y de forma continua."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 13,
+      "q": "¿Cuándo puede volver a trabajar un manipulador de alimentos que está vomitando?",
+      "choices": {
+        "A": "Cuando no tenga síntomas durante 24 horas.",
+        "B": "Después de programar una cita con un médico.",
+        "C": "Cuando diga que se siente mejor.",
+        "D": "Cuando no tenga ningún otro síntoma."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 14,
+      "q": "Un cocinero estornuda constantemente mientras prepara la comida. ¿Qué debe hacer el gerente?",
+      "choices": {
+        "A": "Excluir a la persona del establecimiento.",
+        "B": "Reportar la enfermedad a la autoridad reguladora local.",
+        "C": "Hablar con el médico de la persona.",
+        "D": "Restringir a la persona para que no trabaje con alimentos, utensilios y equipo expuestos."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 15,
+      "q": "¿Cómo se debe gestionar la situación de un empleado de servicio rápido que tiene dolor de garganta y fiebre?",
+      "choices": {
+        "A": "Excluir a la persona del establecimiento.",
+        "B": "Reportar a la persona a la autoridad reguladora local.",
+        "C": "Hablar con el médico de la persona.",
+        "D": "Restringir a la persona para que no trabaje con alimentos, utensilios y equipo expuestos."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 16,
+      "q": "Un manipulador de alimentos lleva puesto un collar, un reloj, aretes y joyas faciales. ¿Qué artículos debe quitarse antes de preparar comida?",
+      "choices": {
+        "A": "El collar.",
+        "B": "El reloj.",
+        "C": "Los aretes.",
+        "D": "Las joyas faciales."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 17,
+      "q": "Un manipulador de alimentos se lavó las manos en el fregadero de tres compartimentos. Se las mojó con agua tibia, se las frotó con jabón durante 10 segundos, se las enjuagó con agua tibia y se las secó con una toalla de un solo uso. ¿Qué hizo mal?",
+      "choices": {
+        "A": "Mojárselas con agua tibia.",
+        "B": "Lavárselas en un fregadero de tres compartimentos.",
+        "C": "Frotárselas durante solo 10 segundos.",
+        "D": "Secárselas con una toalla de un solo uso."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 18,
+      "q": "¿Cuándo debe cambiarse los guantes un manipulador de alimentos que está preparando almuerzos en cajas?",
+      "choices": {
+        "A": "Después de una hora.",
+        "B": "Después de dos horas.",
+        "C": "Después de tres horas.",
+        "D": "Después de cuatro horas."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 19,
+      "q": "Un manipulador de alimentos tiene una herida infectada en la palma de la mano. ¿Qué se debe hacer para que pueda trabajar con alimentos?",
+      "choices": {
+        "A": "La herida debe cubrirse con una protección impermeable y se debe usar un guante de un solo uso.",
+        "B": "La herida debe cubrirse con una protección impermeable y se debe limitar el contacto con los alimentos.",
+        "C": "Las manos deben sanitizarse y la herida debe vendarse con una protección impermeable.",
+        "D": "Se debe aplicar ungüento en la herida y se debe vendar con una protección impermeable."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 20,
+      "q": "¿Dónde puede encontrar los alérgenos enumerados en una etiqueta de alimentos?",
+      "choices": {
+        "A": "Dentro de la lista de ingredientes.",
+        "B": "Dentro del panel de \"Información nutricional\".",
+        "C": "Dentro de la sección de fecha de \"Consumo preferente\" o \"Fecha de caducidad\".",
+        "D": "Dentro de la sección \"Cantidad por porción\"."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 21,
+      "q": "¿Cómo debe manejar un establecimiento las sustituciones de ingredientes de un proveedor para prevenir una reacción alérgica?",
+      "choices": {
+        "A": "Rechazar cualquier sustitución de productos de los proveedores.",
+        "B": "Quitar del menú el platillo que requiere los ingredientes.",
+        "C": "Confiar en la sustitución y usar los ingredientes tal como se proporcionan.",
+        "D": "Identificar posibles sustituciones por adelantado y evaluar cuán aceptable es la sustitución."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 22,
+      "q": "¿Qué alimento es un alérgeno común?",
+      "choices": {
+        "A": "Sésamo (ajonjolí)",
+        "B": "Aceite de oliva",
+        "C": "Pimienta negra",
+        "D": "Ajo"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 23,
+      "q": "¿Qué se debe proporcionar en un establecimiento para prevenir reacciones alérgicas?",
+      "choices": {
+        "A": "Un área libre de alérgenos para preparar alimentos.",
+        "B": "Etiquetado de alérgenos en todos los alimentos que se están preparando.",
+        "C": "Notificación por escrito de los principales alérgenos en los alimentos servidos.",
+        "D": "Lavabos para manos designados para la preparación de órdenes especiales por alérgenos."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 24,
+      "q": "Para prevenir el contacto cruzado,",
+      "choices": {
+        "A": "solo utilice equipo apto para usar con alimentos.",
+        "B": "limpie y sanitice las superficies, los utensilios y el equipo antes de cada uso.",
+        "C": "almacene los alimentos listos para comer y los alimentos crudos por separado.",
+        "D": "descongele los alimentos en un refrigerador a 41°F (5°C), o menos."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 25,
+      "q": "¿Qué deben hacer los empleados para prevenir que las sustancias alergénicas se transfieran a los alimentos?",
+      "choices": {
+        "A": "Usar diferentes utensilios y equipo para las órdenes especiales por alérgenos.",
+        "B": "Cocinar los alimentos a las temperaturas internas mínimas requeridas.",
+        "C": "Mantener fríos los alimentos a una temperatura de 41°F (5°C), o menor.",
+        "D": "Etiquetar correctamente los recipientes de productos químicos."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 26,
+      "q": "Un cocinero que prepara una ensalada César coloca rebanadas de huevo duro encima de la ensalada antes de recordar que el cliente es alérgico al huevo. Dado que hubo un contacto cruzado, ¿qué debe hacer?",
+      "choices": {
+        "A": "Desechar la ensalada.",
+        "B": "Quitar las rebanadas de huevo y servir la ensalada.",
+        "C": "Enjuagar la lechuga y volver a preparar la ensalada.",
+        "D": "Decirle al cliente y dejar que él decida qué hacer."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 27,
+      "q": "Un restaurante está embotellando el aderezo para ensaladas de la casa para venderlo al por menor. ¿Qué debe incluirse en la etiqueta?",
+      "choices": {
+        "A": "Recomendaciones de almacenamiento para el aderezo.",
+        "B": "Fuente de los principales alérgenos alimentarios en el aderezo.",
+        "C": "Información nutricional del aderezo.",
+        "D": "Instrucciones de preparación para el aderezo."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 28,
+      "q": "¿Cuál es el factor más importante al escoger un proveedor de alimentos aprobado?",
+      "choices": {
+        "A": "Tiene un programa HACCP u otro sistema de seguridad de alimentos.",
+        "B": "Tiene prácticas documentadas de fabricación y empaque.",
+        "C": "Su bodega está cerca del establecimiento, lo que reduce el tiempo de envío.",
+        "D": "Fue inspeccionado, y cumple con las leyes federales, estatales y locales."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 29,
+      "q": "Un camión de entrega de alimentos llega a un establecimiento de servicio de alimentos. ¿Cuál es el primer paso que se debe dar?",
+      "choices": {
+        "A": "Se debe inspeccionar la entrega.",
+        "B": "Se debe inspeccionar el camión de entregas.",
+        "C": "Se deben inspeccionar todos los productos TCS.",
+        "D": "Se deben inspeccionar todos los productos congelados."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 30,
+      "q": "¿Qué alimento se debe rechazar durante la recepción (entrega)?",
+      "choices": {
+        "A": "Leche recibida a 45°F (7°C).",
+        "B": "Latas con pequeñas abolladuras en el cuerpo de la lata.",
+        "C": "Ostras vivas recibidas a una temperatura interna de 50°F (10°C).",
+        "D": "Vasos de un solo uso con empaque sucio."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 31,
+      "q": "¿En qué orden de arriba hacia abajo se deben almacenar el salmón, el pollo, la carne de res molida y un asado de res (todos crudos) en un refrigerador?",
+      "choices": {
+        "A": "1. pollo, 2. carne de res molida, 3. asado de res, 4. salmón.",
+        "B": "1. carne de res molida, 2. pollo, 3. salmón, 4. asado de res.",
+        "C": "1. asado de res, 2. carne de res molida, 3. pollo, 4. salmón.",
+        "D": "1. salmón, 2. asado de res, 3. carne de res molida, 4. pollo."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 32,
+      "q": "Los alimentos deben almacenarse lejos de las paredes y al menos a _______ del piso.",
+      "choices": {
+        "A": "2 pulgadas (5 centímetros).",
+        "B": "4 pulgadas (10 centímetros).",
+        "C": "5 pulgadas (13 centímetros).",
+        "D": "6 pulgadas (15 centímetros)."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 33,
+      "q": "¿Cuándo se deben cambiar los guantes de un solo uso?",
+      "choices": {
+        "A": "Tan pronto como se rompan",
+        "B": "Cada dos horas, sin importar la tarea",
+        "C": "Al hacer una pausa para hablar con un compañero de trabajo",
+        "D": "Después de preparar una bandeja de sándwiches y antes de preparar otra"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 34,
+      "q": "¿Cuál de los siguientes artículos puede manejarse con las manos descubiertas?",
+      "choices": {
+        "A": "Panes frescos para sándwiches.",
+        "B": "Papas picadas para una sopa.",
+        "C": "Huevos duros pelados para ensaladas.",
+        "D": "Sandía cortada que se usará como decoración"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 35,
+      "q": "Un cocinero debe verificar la temperatura interna de una pechuga de pollo. ¿Dónde debe insertar la sonda del termómetro?",
+      "choices": {
+        "A": "En la parte más delgada de la pechuga de pollo.",
+        "B": "En la parte más gruesa de la pechuga de pollo.",
+        "C": "En la parte inferior de la pechuga de pollo.",
+        "D": "En la parte superior de la pechuga de pollo."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 36,
+      "q": "¿Cuál es la temperatura interna mínima de cocción para el salmón?",
+      "choices": {
+        "A": "135°F (57°C)",
+        "B": "145°F (63°C) por 15 segundos",
+        "C": "155°F (68°C) por 17 segundos",
+        "D": "165°F (74°C) por < 1 segundos"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 37,
+      "q": "Las pechugas de pollo se cocinarán parcialmente para servirse después. ¿Cuál es el tiempo máximo para cocinar el pollo durante la cocción inicial?",
+      "choices": {
+        "A": "60 minutos",
+        "B": "70 minutos",
+        "C": "80 minutos",
+        "D": "90 minutos"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 38,
+      "q": "¿Dónde se debe colocar una olla pequeña de salsa de carne para que se enfríe?",
+      "choices": {
+        "A": "En un refrigerador.",
+        "B": "Un congelador.",
+        "C": "Un fregadero con agua y hielo.",
+        "D": "En una mesa de preparación."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 39,
+      "q": "Los alimentos se deben enfriar de 135°F a 70°F (de 57°C a 21°C) dentro de las primeras ___ horas y, luego, de 70°F a 41°F (de 21°C a 5°C) o menos en las siguientes ___ horas.",
+      "choices": {
+        "A": "dos, cuatro",
+        "B": "cuatro, dos",
+        "C": "tres, cinco",
+        "D": "cinco, tres"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 40,
+      "q": "¿Qué alimento TCS se ha enfriado correctamente?",
+      "choices": {
+        "A": "Sopa de almejas enfriada de 135°F a 70°F (57°C a 21°C), en cuatro horas, y después de 70°F a 41°F (21°C a 5°C), en dos horas.",
+        "B": "Chili de res enfriado de 135°F a 70°F (57°C a 21°C), en dos horas, y después de 70°F a 41°F (21°C a 5°C), en seis horas.",
+        "C": "Cerdo desmenuzado enfriado de 135°F a 70°F (57°C a 21°C), en tres horas, y después de 70°F a 41°F (21°C a 5°C), en dos horas.",
+        "D": "El arroz frito con camarones se enfrió de 135°F a 70°F (57°C a 21°C), en una hora, y después de 70°F a 41°F (21°C a 5°C), en cuatro horas."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 41,
+      "q": "Se están recalentando albóndigas para mantenerlas calientes en un buffet. ¿A qué temperatura deben recalentarse las albóndigas?",
+      "choices": {
+        "A": "135°F (57°C) por 15 segundos en dos horas.",
+        "B": "145°F (63°C) por 15 segundos en dos horas.",
+        "C": "155°F (68°C) por 15 segundos en dos horas.",
+        "D": "165°F (74°C) por 15 segundos en dos horas."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 42,
+      "q": "¿A qué temperatura debe recalentar el chili para servir de inmediato?",
+      "choices": {
+        "A": "A cualquier temperatura.",
+        "B": "135°F (57°C)",
+        "C": "145°F (63°C)",
+        "D": "165°F (68°C)"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 43,
+      "q": "¿A qué temperatura se deben recalentar los alimentos listos para comer, empacados y procesados comercialmente?",
+      "choices": {
+        "A": "A cualquier temperatura.",
+        "B": "135°F (57°C)",
+        "C": "145°F (63°C)",
+        "D": "155°F (68°C)"
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 44,
+      "q": "¿Qué se debe hacer con los alimentos TCS listos para comer que se prepararán en el establecimiento y se mantendrán por más de 24 horas?",
+      "choices": {
+        "A": "Marcarlos con la fecha.",
+        "B": "Venderlos.",
+        "C": "Tirarlos.",
+        "D": "Servirlos en la próxima hora."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 45,
+      "q": "¿Cuándo se debe desechar una ensalada de atún que se preparó el 19 de julio?",
+      "choices": {
+        "A": "El 21 de julio.",
+        "B": "El 23 de julio.",
+        "C": "El 25 de julio.",
+        "D": "El 27 de julio."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 46,
+      "q": "¿Qué método es una forma segura de descongelar camarones congelados?",
+      "choices": {
+        "A": "Como parte del proceso de cocción.",
+        "B": "Bajo un chorro de agua a 125°F (52°C) o más.",
+        "C": "Sumergidos en un fregadero de agua estancada a 70°F (21°C).",
+        "D": "En una mesa de preparación a temperatura ambiente."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 47,
+      "q": "Un empaque de atún congelado envasado al vacío indica que el pescado debe permanecer congelado hasta su uso. ¿Cuándo se debe sacar el atún del empaque?",
+      "choices": {
+        "A": "Antes de que se almacene en el congelador.",
+        "B": "Antes de que se descongele en el refrigerador.",
+        "C": "Después de recibirlo.",
+        "D": "Después de que se le haya marcado la fecha."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 48,
+      "q": "Un gerente está comprando equipo para el establecimiento. ¿Qué marca debe buscar el gerente para asegurarse de que el equipo sea seguro para usar con alimentos?",
+      "choices": {
+        "A": "Marca FDA, marca USDA o marca OSHA.",
+        "B": "Marca NSF, marca de clasificación UL EPH o marca de saneamiento ETL.",
+        "C": "Marca Energy Star, marca AHRI o marca RU.",
+        "D": "Marca FCC, marca CE o marca USP."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 49,
+      "q": "¿Cuál es la temperatura mínima a la que se debe mantener la sopa de pollo que se servirá a los clientes?",
+      "choices": {
+        "A": "135°F (57°C)",
+        "B": "145°F (63°C)",
+        "C": "155°F (68°C)",
+        "D": "165°F (74°C)"
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 50,
+      "q": "Un manipulador de alimentos mantuvo una ensalada de pollo para sándwiches en un depósito frío durante cuatro horas. Cuando verifica la temperatura de la ensalada, es de 50°F (10°C). ¿Qué debe hacer?",
+      "choices": {
+        "A": "Vender la ensalada de pollo restante de inmediato.",
+        "B": "Vender la ensalada de pollo restante en un plazo de dos horas.",
+        "C": "Enfriar la ensalada de pollo a 41°F (5°C).",
+        "D": "Desechar la ensalada de pollo."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 51,
+      "q": "¿Cuándo se necesita una advertencia para los consumidores si los artículos del menú contienen alimentos TCS?",
+      "choices": {
+        "A": "Cuando los artículos están crudos o poco cocidos.",
+        "B": "Cuando los artículos contienen un alérgeno potencial.",
+        "C": "Cuando el establecimiento solo ofrece servicio de mostrador.",
+        "D": "Cuando el establecimiento atiende principalmente a una población de alto riesgo."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 52,
+      "q": "¿Qué alimento se puede volver a servir a otro cliente?",
+      "choices": {
+        "A": "Un recipiente de salsa parcialmente usado.",
+        "B": "Paquetes de condimentos sin abrir.",
+        "C": "Pan no consumido de una cesta de pan.",
+        "D": "Un pepinillo no consumido usado como decoración de un plato."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 53,
+      "q": "¿Qué debe incluir la etiqueta de la sopa en un buffet?",
+      "choices": {
+        "A": "El nombre del alimento.",
+        "B": "La fecha de preparación.",
+        "C": "Los ingredientes de la sopa.",
+        "D": "La fecha de caducidad."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 54,
+      "q": "¿Qué utensilio se ha almacenado correctamente?",
+      "choices": {
+        "A": "Un par de pinzas almacenadas colocadas planas sobre una ensalada César.",
+        "B": "Un cucharón para servir colocado en albóndigas con el mango por encima del borde del recipiente.",
+        "C": "Un par de pinzas almacenadas colocadas en el centro de varias mesas de vapor para servir múltiples alimentos.",
+        "D": "Un cucharón para hielo colocado sobre el hielo en una máquina de hielo."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 55,
+      "q": "Los utensilios que se usan continuamente deben limpiarse y sanitizarse al menos una vez cada ___ horas.",
+      "choices": {
+        "A": "dos",
+        "B": "tres",
+        "C": "cuatro",
+        "D": "seis"
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 56,
+      "q": "Almacenar la carne cruda por separado de los alimentos listos para comer durante el transporte para servirse fuera del establecimiento ayuda a prevenir",
+      "choices": {
+        "A": "la contaminación cruzada.",
+        "B": "el abuso de tiempo y temperatura.",
+        "C": "reacciones alérgicas.",
+        "D": "la contaminación física."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 57,
+      "q": "Se está usando una rebanadora continuamente para cortar carnes frías. ¿Con qué frecuencia se debe limpiar y sanitizar?",
+      "choices": {
+        "A": "Cada hora.",
+        "B": "Cada dos horas.",
+        "C": "Cada tres horas.",
+        "D": "Cada cuatro horas."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 58,
+      "q": "¿Cuál es la manera correcta de limpiar y sanitizar una mesa de preparación?",
+      "choices": {
+        "A": "Eliminar los residuos de comida de la superficie, enjuagar, lavar, sanitizar, secar al aire.",
+        "B": "Eliminar los residuos de comida de la superficie, lavar, enjuagar, sanitizar, secar al aire.",
+        "C": "Sanitizar, eliminar los residuos de comida de la superficie, lavar, enjuagar, secar al aire.",
+        "D": "Secar al aire, eliminar los residuos de alimentos de la superficie, enjuagar, sanitizar, lavar."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 59,
+      "q": "¿Cuál es el primer paso para limpiar y sanitizar artículos en un fregadero de tres compartimentos?",
+      "choices": {
+        "A": "Secar los artículos al aire.",
+        "B": "Lavar los artículos en la solución de detergente.",
+        "C": "Sumergir los artículos en la solución sanitizante.",
+        "D": "Raspar o eliminar los residuos de comida de la superficie de los artículos."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 60,
+      "q": "¿Cuál es la diferencia entre un desinfectante y un sanitizante?",
+      "choices": {
+        "A": "Los sanitizantes son más fuertes que los desinfectantes.",
+        "B": "Los sanitizantes están regulados por la EPA, mientras que los desinfectantes no.",
+        "C": "Los desinfectantes son más débiles que los sanitizantes y se usan para la limpieza diaria.",
+        "D": "Los sanitizantes reducen los patógenos, mientras que los desinfectantes los inactivan o eliminan."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 61,
+      "q": "Un gerente acaba de terminar de crear un calendario maestro de limpieza. ¿Cuál es el siguiente paso?",
+      "choices": {
+        "A": "Entrenar al personal para que siga el calendario.",
+        "B": "Determinar quién debe hacer cada tarea.",
+        "C": "Cronometrar al personal sobre cuánto tiempo tardan en limpiar.",
+        "D": "Determinar qué se debe limpiar."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 62,
+      "q": "¿Qué información debe incluir un calendario maestro de limpieza?",
+      "choices": {
+        "A": "Qué se debe limpiar y cuándo.",
+        "B": "Qué se debe limpiar, cuándo y quién debe hacerlo.",
+        "C": "Qué se debe limpiar, cuándo, quién debe hacerlo y cómo.",
+        "D": "Qué se debe limpiar, cuándo, quién debe hacerlo, cómo y por qué."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 63,
+      "q": "Un empleado está vertiendo un limpiador de su envase original a una botella rociadora. ¿Qué debe escribir el manipulador de alimentos en la etiqueta de la botella rociadora?",
+      "choices": {
+        "A": "El nombre común del producto químico.",
+        "B": "La fecha de caducidad del producto químico.",
+        "C": "La fecha en que se transfirió el producto químico.",
+        "D": "Sus iniciales."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 64,
+      "q": "El propietario de un pequeño restaurante italiano planea ampliar el tamaño de su cocina. ¿Qué debe presentar a la autoridad reguladora antes de comenzar la construcción?",
+      "choices": {
+        "A": "Prueba de seguro.",
+        "B": "El plan del proyecto.",
+        "C": "Una solicitud de permiso (variance) de zonificación.",
+        "D": "Una declaración de impacto ambiental."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 65,
+      "q": "¿Cuál es el propósito de un sistema de administración de seguridad de los alimentos?",
+      "choices": {
+        "A": "Mantener todas las áreas de las instalaciones limpias y libres de plagas.",
+        "B": "Identificar, etiquetar y reparar el equipo defectuoso dentro de las instalaciones.",
+        "C": "Prevenir las enfermedades transmitidas por los alimentos controlando los riesgos y peligros.",
+        "D": "Usar los métodos correctos para comprar y recibir alimentos."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 66,
+      "q": "¿Cuál es una fuente aprobada de agua potable?",
+      "choices": {
+        "A": "Pozo privado no analizado.",
+        "B": "Vehículo de transporte de agua.",
+        "C": "Agua de una cisterna.",
+        "D": "Agua de un sistema de recolección de agua de lluvia."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 67,
+      "q": "Un manipulador de alimentos deja caer el extremo de una manguera en una cubeta de trapeador y abre el agua para llenarla. ¿Qué ha hecho mal el manipulador de alimentos?",
+      "choices": {
+        "A": "Creó una conexión cruzada.",
+        "B": "Creó un espacio de aire.",
+        "C": "Previno el reflujo.",
+        "D": "Previno el retrosifonaje."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 68,
+      "q": "¿A qué temperatura mínima se debe suministrar agua corriente a una estación de lavado de manos?",
+      "choices": {
+        "A": "70°F (21°C)",
+        "B": "75°F (24°C)",
+        "C": "80°F (27°C)",
+        "D": "85°F (29°C)"
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 69,
+      "q": "¿Dónde deben desecharse las aguas residuales?",
+      "choices": {
+        "A": "Un desagüe pluvial.",
+        "B": "Un estanque de retención.",
+        "C": "Una gravera en un pozo seco.",
+        "D": "Un sistema de alcantarillado aprobado."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 70,
+      "q": "¿Qué lugares de un establecimiento suelen requerir la iluminación más brillante?",
+      "choices": {
+        "A": "Áreas de preparación.",
+        "B": "Habitaciones de almacenamiento seco.",
+        "C": "Áreas de autoservicio.",
+        "D": "Cámaras refrigeradoras."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 71,
+      "q": "¿Cuál es una forma de mantener un establecimiento libre de plagas?",
+      "choices": {
+        "A": "Negar a las plagas el acceso al establecimiento.",
+        "B": "Mantener abiertos los botes de basura exteriores.",
+        "C": "Limpiar los derrames de alimentos al final de cada turno.",
+        "D": "Almacenar los alimentos y suministros a 1 pulgada del piso en el cuarto de almacén."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 72,
+      "q": "¿Cuál es una buena razón para limpiar cuidadosamente un establecimiento?",
+      "choices": {
+        "A": "Destruye los huevos de los insectos.",
+        "B": "Elimina las plagas del establecimiento.",
+        "C": "Elimina la necesidad de contratar a un operador de control de plagas (PCO).",
+        "D": "Elimina la necesidad de inspecciones de plagas."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 73,
+      "q": "¿Cuándo debe reparar o reemplazar el equipo en el establecimiento?",
+      "choices": {
+        "A": "Cuando está desgastado.",
+        "B": "Cuando expira la garantía.",
+        "C": "Cuando está programado para su calibración.",
+        "D": "Cuando el equipo no es energéticamente eficiente."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 74,
+      "q": "Los botes de basura exteriores deben",
+      "choices": {
+        "A": "sanitizarse con frecuencia.",
+        "B": "mantenerse tapados siempre.",
+        "C": "estar alejados de las áreas de estacionamiento de los clientes.",
+        "D": "estar recubiertos con plástico o papel resistente a la humedad."
+      },
+      "answer": "B",
+      "explain": ""
+    },
+    {
+      "id": 75,
+      "q": "Un gerente exige que los empleados guarden sus artículos personales en un área designada. ¿Cuál es la razón principal para hacer esto?",
+      "choices": {
+        "A": "Prevenir el robo de las pertenencias de los empleados.",
+        "B": "Reducir el desorden en la cocina.",
+        "C": "Evitar la contaminación de los alimentos y las superficies en contacto con los alimentos.",
+        "D": "Cumplir con las normas de seguridad contra incendios."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 76,
+      "q": "¿Qué debe hacer un establecimiento de servicio de alimentos al recibir clientes con animales de servicio?",
+      "choices": {
+        "A": "Permitir animales de servicio solo si el cliente presenta los registros veterinarios.",
+        "B": "Permitir perros en todas las áreas interiores y exteriores sin restricciones.",
+        "C": "Negar la entrada a todos los animales para evitar posibles violaciones del código de salud.",
+        "D": "Consultar con la autoridad reguladora local los requisitos específicos."
+      },
+      "answer": "D",
+      "explain": ""
+    },
+    {
+      "id": 77,
+      "q": "¿Qué situación es un peligro inminente para la salud?",
+      "choices": {
+        "A": "Un reflujo de un drenaje del piso que ha entrado en contacto con los alimentos.",
+        "B": "Una tormenta que ha dejado la instalación sin electricidad durante más de una hora.",
+        "C": "Un sistema de ventilación que ha dejado acumulación de grasa en paredes y techos.",
+        "D": "Una avería de la máquina lavaplatos que requiere el uso de un fregadero de tres compartimentos para limpiar y sanitizar los artículos."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 78,
+      "q": "Las aguas residuales se acumulan en un área de almacenamiento de alimentos y existe un riesgo significativo de contaminación de los alimentos. ¿Qué se debe hacer?",
+      "choices": {
+        "A": "Ejecutar un plan HACCP.",
+        "B": "Reducir las horas de operación.",
+        "C": "Suspender el servicio y notificar a la autoridad reguladora.",
+        "D": "Continuar el servicio, pero notificar a la autoridad reguladora."
+      },
+      "answer": "C",
+      "explain": ""
+    },
+    {
+      "id": 79,
+      "q": "Un establecimiento de servicio de alimentos sufre un corte de energía (apagón) y cierra para proteger al público. ¿Cuándo puede reabrir el establecimiento?",
+      "choices": {
+        "A": "Una vez que tengan la aprobación de la autoridad reguladora.",
+        "B": "Una vez que se restablezca la energía y las unidades de refrigeración estén funcionando.",
+        "C": "Después de desechar todos los alimentos TCS y sanitizar las superficies en contacto con los alimentos.",
+        "D": "Cuando el gerente determine que se han seguido los procedimientos de seguridad de los alimentos."
+      },
+      "answer": "A",
+      "explain": ""
+    },
+    {
+      "id": 80,
+      "q": "Se notifica a un gerente sobre la retirada de un alimento específico. ¿Qué debe hacer el gerente con el alimento retirado?",
+      "choices": {
+        "A": "Combinar el alimento con alimentos no retirados durante la preparación.",
+        "B": "Registrar los nombres de los clientes que compran el alimento.",
+        "C": "Almacenar el alimento retirado por separado de otros alimentos.",
+        "D": "Vender el alimento retirado en un plazo de 24 horas."
+      },
+      "answer": "C",
+      "explain": ""
+    }
+  ]
+}

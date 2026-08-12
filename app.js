@@ -157,10 +157,28 @@ function answeredCount(id) {
    One cell per test: just the name and an arrow, six across on desktop.
    Cell order follows the order in catalog.json. The same grid appears on
    the start screen and again under the results. */
+// Heading drawn above the first test of a given language. English needs one as
+// much as Spanish does: it no longer comes first, so without a heading of its
+// own its cards would read as belonging to the group above them.
+// A language with no entry here falls back to its bare code.
+const LANG_HEADINGS = { en: 'In English 🇺🇸', es: 'En Español 🇲🇽' };
+
 function renderTests() {
   const done = readDone();
+  let lastLang = '';
 
   const html = tests.map((test, i) => {
+    // Tests are grouped by language purely by catalog order - the heading is
+    // emitted wherever the language changes, including back to English. Keeping
+    // two tests of the same language apart in the catalog therefore prints the
+    // heading twice, which is the visible symptom of a catalog needing regrouped.
+    const lang = test.lang ? String(test.lang) : 'en';
+    const head = (lang !== lastLang)
+      ? '<p class="quiz-grid-head">' +
+        escapeHtml(LANG_HEADINGS[lang] || lang.toUpperCase()) + '</p>'
+      : '';
+    lastLang = lang;
+
     // Finished tests are tinted rather than badged, so the label stays just
     // the name. A half-finished run gets its own tint and a tooltip.
     const started = done[test.id] ? 0 : answeredCount(test.id);
@@ -169,7 +187,7 @@ function renderTests() {
     const tip = done[test.id]
       ? test.title + ' - done'
       : (started ? test.title + ' - ' + started + ' answered so far' : test.title);
-    return '' +
+    return head +
       '<button type="button" data-test="' + i + '" class="' + cls + '"' +
       '        title="' + escapeHtml(tip) + '">' +
       '  <span class="text-truncate">' + escapeHtml(test.title) + '</span>' +
