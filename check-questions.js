@@ -10,6 +10,7 @@ const DIR = 'data';
 const CATALOG = path.join(DIR, 'catalog.json');
 const ID_FORMAT = /^\d+$/;                    // "1", "2" - a number, written as a string
 const SLUG_FORMAT = /^[a-z0-9][a-z0-9-]*$/;   // slugs become filenames and URLs
+const LANG_FORMAT = /^[a-z]{2}$/;             // "es", "en" - printed on the card as-is
 const LETTERS = 'ABCDEFGH'.split('');         // valid choice keys, in order
 const problems = [];   // these fail the check
 const warnings = [];   // these are only reported
@@ -47,6 +48,12 @@ tests.forEach((test, t) => {
   if (test.published !== undefined && typeof test.published !== 'boolean') {
     problems.push(entry + ' has "published": ' + JSON.stringify(test.published) +
       '. It must be true or false with no quotes.');
+  }
+
+  // The badge prints whatever this says, so a typo would ship as a typo.
+  if (test.lang !== undefined && !LANG_FORMAT.test(test.lang)) {
+    problems.push(entry + ' has "lang": ' + JSON.stringify(test.lang) +
+      '. Use a lowercase two-letter code, e.g. "es".');
   }
 
   if (test.id === undefined) {

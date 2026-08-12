@@ -68,6 +68,21 @@ keeping them the same avoids confusion on the results screen.
 `published: false` keeps a test in the repo but off the site. Only an explicit `false`
 hides it — a missing key still shows.
 
+`lang` is optional, a lowercase two-letter code, and defaults to `en`. Each language
+gets a heading above its first test — `"lang": "es"` gives **En Español 🇲🇽** — and the
+cards after it start on a fresh row.
+
+The heading is emitted wherever the language *changes*, so **keep tests of the same
+language together in the catalog**. Splitting them prints the heading twice, which is
+the visible symptom rather than an error. This applies to hidden fixtures too: a test
+parked in the wrong group appears under the wrong heading the day you publish it.
+
+Headings come from `LANG_HEADINGS` in `app.js`; a language with no entry there falls
+back to its bare code. The checker rejects anything that is not two lowercase letters.
+
+Flag emoji are regional-indicator pairs, so Windows browsers render **MX** as letters
+rather than a flag. Fine on phones and Macs, plainer on a Windows laptop.
+
 ### 3. Check it
 
 ```

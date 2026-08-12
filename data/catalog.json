@@ -1,5 +1,19 @@
 [
   {
+    "id": "6",
+    "slug": "diagnostico",
+    "title": "2026 Prueba de Diagnóstico",
+    "published": true,
+    "lang": "es"
+  },
+  {
+    "id": "7",
+    "slug": "practica",
+    "title": "2026 Prueba de Práctica",
+    "published": true,
+    "lang": "es"
+  },
+  {
     "id": "1",
     "slug": "test",
     "title": "2026 Diagnostic Test SSM9E",
