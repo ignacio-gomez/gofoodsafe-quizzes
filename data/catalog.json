@@ -29,13 +29,13 @@
     "id": "4",
     "slug": "diagnostic",
     "title": "2022 Diagnostic Test",
-    "published": true
+    "published": false
   },
   {
     "id": "3",
     "slug": "foodcode",
     "title": "2022 Practice Test",
-    "published": true
+    "published": false
   },
   {
     "id": "5",
